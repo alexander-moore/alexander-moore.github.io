@@ -1,8 +1,11 @@
-## Welcome to GitHub Pages
+## Who I Am
 
 You can use the [editor on GitHub](https://github.com/alexander-moore/alexander-moore.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
-I made this change. 
+I made this change.
+
+![Me in Japan](images/thumbnail_image.jpg)
+
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
