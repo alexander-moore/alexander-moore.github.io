@@ -1,7 +1,7 @@
 ## Who I Am
 
-Born in Tucson Arizona now happy in the Pacific Northwest
 I love machine learning and particularly unsupervised or self-supervised learning.
+For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN]('https://junyanz.github.io/CycleGAN/') to demonstrate that all image synthesis models may be expressed as cycles between spaces.
 
 I made this change.
 
