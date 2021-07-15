@@ -1,7 +1,7 @@
 ## Alex Moore's Machine Learning Research
 
 I love machine learning and particularly unsupervised or self-supervised learning.
-For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces.
+For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference)-related :blush:.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="170">
 
@@ -11,6 +11,7 @@ For my Master's degree, I did year-long independent research on inducing Cycles 
 - Conditional GANs and novel evaluation metrics
 - Augmentation for chemical sensing
 - Pascal's wager for data augmentation
+- Self-Supervised learning and interactions with data augmentation
 
 ### Published Works and Preprints
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52)
