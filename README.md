@@ -12,7 +12,7 @@ where does the text go
 where does the text go
 
 <div>
-    <p style="float: left;"><img src="images/thumbnail_Image.jpg" height="200px" width="200px" border="1px"></p>
+    <p style="float: left;"><img src="images/thumbnail_Image.jpg" width="200px" border="1px"></p>
     <p>I love machine learning and particularly unsupervised or self-supervised learning.
 For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces.</p>
 </div>
