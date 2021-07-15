@@ -43,11 +43,18 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 
 ### Education and Awards
-* Worcester Polytechnic Institute
-    - subitem 1
-    - subitem 2
+* Worcester Polytechnic Institute, Worcester Massachusetts
+    - Master of Science - Data Science 2019 - 2021
+    - Doctory of Philosophy - Data Science 2021 - 
+    - Presidential Fellowship 2019-2020
+
+* Reed College, Portland Oregon
+    - Bachelor of Arts - Mathematics and Statistics 2016 - 2019
+    - Dean's List 2016 - 2017
 
 ### Experience
 - Graduate Research Assistant
 - Actuarial Intern: Milliman
-- Undergraduate Educator
+* Undergraduate Educator
+    - Lectured on math topics and engaged in one-on-one learning with undergraduate students in office hours settings. Ability to approach both learning and teaching from many angles to best suit the diversity of student learners.
+
