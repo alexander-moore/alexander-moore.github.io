@@ -6,9 +6,7 @@ I love machine learning and particularly unsupervised or self-supervised learnin
 I made this change.
 
 <img src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
-<img style="float: right;" src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg">
-![images]("https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg")
-
+<img style="float: right;" src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
