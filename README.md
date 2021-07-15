@@ -1,13 +1,13 @@
 ## Who I Am
 
 I love machine learning and particularly unsupervised or self-supervised learning.
-For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN]('https://junyanz.github.io/CycleGAN/') to demonstrate that all image synthesis models may be expressed as cycles between spaces.
+For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces.
 
 I made this change.
 
 <img src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
 <img style="float: right;" src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
-
+![image here](https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
