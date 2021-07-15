@@ -9,7 +9,11 @@ I made this change.
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="100">
 
 
-### Master's Thesis
+### Master's Thesis and Recent Research
+- Algorithmic design of chemical sensing data sets
+- Conditional GANs and novel evaluation metrics
+- Augmentation for chemical sensing
+- Pascal's wager for data augmentation
 
 ### Published Works and Preprints
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52)
