@@ -1,6 +1,6 @@
 ## Who I Am
 
-You can use the [editor on GitHub](https://github.com/alexander-moore/alexander-moore.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+I
 
 I made this change.
 
@@ -40,3 +40,14 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+### Education and Awards
+* Worcester Polytechnic Institute
+- subitem 1
+- subitem 2
+
+### Experience
+- Graduate Research Assistant
+- Actuarial Intern: Milliman
+- Undergraduate Educator
