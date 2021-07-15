@@ -7,26 +7,9 @@ I made this change.
 
 <img src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
 <img style="float: right;" src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg">
-![iamges]("https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg")
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+![images]("https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg")
 
 
-# Header 1
-header 1 
-## Header 2
-header 2
-### Header 3
-header 3
-
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
