@@ -5,7 +5,7 @@ I love machine learning and particularly unsupervised or self-supervised learnin
 
 I made this change.
 
-<img src=images/thumbnail_Image.jpg width="100">
+<img src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
