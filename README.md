@@ -43,7 +43,13 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 * Reed College, Portland Oregon
     - Bachelor of Arts - Mathematics and Statistics 2016 - 2019
+    - President's Commendation for Excellence
     - Dean's List 2016 - 2017
+
+* University of Arizona, Tucson Arizona
+    - Honors College Physics 2013-2016
+    - Wildcat Excellence Award
+    - Honor's College Dean's List
 
 ### Experience
 - Graduate Research Assistant
