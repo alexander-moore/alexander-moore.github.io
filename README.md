@@ -7,9 +7,7 @@ I made this change.
 
 <img src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
 <img style="float: right;" src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
-![image here](https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Master's Thesis
 
