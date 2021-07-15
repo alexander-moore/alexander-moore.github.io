@@ -3,12 +3,22 @@
 I love machine learning and particularly unsupervised or self-supervised learning.
 For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces.
 
-I made this change.
+Can text fit in between my 
 
 <img src="images/thumbnail_Image.jpg" width="100">
+where does the text go
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="100">
 
+where does the text go
 
+<div>
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200px" width="200px" border="1px"></p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+</div>
+<div style="clear: left;">
+    <p style="float: left;"><img src="http://placekitten.com/g/200/200" height="200" width="200" border="1px"></p>
+    <p>Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text Text</p>
+</div>
 ### Master's Thesis and Recent Research
 - Algorithmic design of chemical sensing data sets
 - Conditional GANs and novel evaluation metrics
