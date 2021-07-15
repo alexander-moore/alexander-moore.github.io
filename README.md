@@ -1,6 +1,7 @@
 ## Who I Am
 
-I
+Born in Tucson Arizona now happy in the Pacific Northwest
+I love machine learning and particularly unsupervised or self-supervised learning.
 
 I made this change.
 
@@ -41,6 +42,11 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
 
+### Master's Thesis
+
+### Published Works and Preprints
+* [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52)
+    - Artificial Intelligence in Education 2021
 
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
