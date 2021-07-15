@@ -6,7 +6,8 @@ I love machine learning and particularly unsupervised or self-supervised learnin
 I made this change.
 
 <img src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
-
+<img style="float: right;" src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg">
+![iamges]("https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg")
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
