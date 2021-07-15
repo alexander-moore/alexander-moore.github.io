@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/alexander-moore/alexander-
 
 I made this change.
 
-![Me in Japan](images/thumbnail_Image.jpg)
+<img src=images/thumbnail_Image.jpg width="100">
 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
