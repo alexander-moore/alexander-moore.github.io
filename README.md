@@ -44,8 +44,8 @@ Having trouble with Pages? Check out our [documentation](https://docs.github.com
 
 ### Education and Awards
 * Worcester Polytechnic Institute
-- subitem 1
-- subitem 2
+    - subitem 1
+    - subitem 2
 
 ### Experience
 - Graduate Research Assistant
