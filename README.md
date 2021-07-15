@@ -5,7 +5,7 @@ For my Master's degree, I did year-long independent research on inducing Cycles 
 
 I made this change.
 
-<img src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
+<img src="images/thumbnail_Image.jpg" width="100">
 <img style="float: right;" src="https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/thumbnail_Image.jpg" width="100">
 
 
