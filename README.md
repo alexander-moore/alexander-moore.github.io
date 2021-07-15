@@ -31,7 +31,7 @@ For my Master's degree, I did year-long independent research on inducing Cycles 
 * University of Arizona, Tucson Arizona
     - Honors College Physics 2013-2016
     - Wildcat Excellence Award
-    - Honor's College Dean's List
+    - Honors College Dean's List
 
 ### Experience
 - Graduate Research Assistant
