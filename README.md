@@ -4,8 +4,10 @@ I love machine learning: particularly unsupervised or self-supervised learning. 
 
 As part of my Master's degree, I performed year-long independent research on inducing cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that baseline GANs are consistently improved by moving samples between the latent and data spaces.
 
-<img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
-
+<p>
+  <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
+  <em>image_caption</em>  
+</p>
 
 ### Master's Thesis and Recent Research
 - Algorithmic design of chemical sensing data sets
