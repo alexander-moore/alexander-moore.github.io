@@ -21,7 +21,7 @@ As part of my Master's degree, I performed year-long independent research on ind
     - Algorithmic data set design
 
 ### Stuff I'm Proud of: Published Work, Preprints, and Projects
-* [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52)
+* [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
     - Artificial Intelligence in Education 2021
 
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation)
