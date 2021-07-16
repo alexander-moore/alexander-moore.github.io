@@ -17,6 +17,9 @@ As part of my Master's degree, I performed year-long independent research on ind
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52)
     - Artificial Intelligence in Education 2021
 
+* [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation)
+    - Deep Learning Final Project 2021
+
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525)
     - Reinforcement Learning Final Project 2020
 
