@@ -4,10 +4,7 @@ I love machine learning: particularly unsupervised or self-supervised learning. 
 
 As part of my Master's degree, I performed year-long independent research on inducing cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that baseline GANs are consistently improved by moving samples between the latent and data spaces.
 
-<p>
-  <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
-  <em>image_caption</em>  
-</p>
+<img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
 ### Master's Thesis and Recent Research
 - Algorithmic design of chemical sensing data sets
@@ -37,8 +34,10 @@ As part of my Master's degree, I performed year-long independent research on ind
     - Honors College Dean's List
 
 ### Experience
-- Graduate Research Assistant
-- Actuarial Intern: Milliman
+* Graduate Research Assistant
+    - Machine learning and deep learning research focusing on unsupervised and representation learning. Applied research cooperation with USARMY DEVCOM Soldier Center on data analysis and supervised learning.
+* Actuarial Intern: Milliman
+    - Automated healthcare claims repricing with a novel software tool, removing the need for manual SQL claims repricing by actuarial scientists.
 * Undergraduate Educator
-    - Lectured on math topics and engaged in one-on-one learning with undergraduate students in office hours settings. Ability to approach both learning and teaching from many angles to best suit the diversity of student learners.
+    - Lectured on math topics and engaged in one-on-one learning with undergraduate students. Ability to approach both learning and teaching from many angles to best suit the diversity of student learners.
 
