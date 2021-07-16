@@ -26,7 +26,7 @@ As part of my Master's degree, I performed year-long independent research on ind
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
     - Master of Science - Data Science 2019 - 2021
-    - Doctory of Philosophy - Data Science 2021 - 
+    - Doctor of Philosophy - Data Science 2021 - 
     - Presidential Fellowship 2019-2020
 
 * Reed College, Portland Oregon
