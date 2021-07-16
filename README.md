@@ -1,6 +1,6 @@
 ## About Me
 
-I love machine learning: and particularly unsupervised or self-supervised learning. Currently a graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth.
+I love machine learning: particularly unsupervised or self-supervised learning. Currently a graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth.
 
 As part of my Master's degree, I performed year-long independent research on inducing cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces.
 
