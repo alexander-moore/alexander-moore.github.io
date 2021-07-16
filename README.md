@@ -7,11 +7,18 @@ As part of my Master's degree, I performed year-long independent research on ind
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
 ### Master's Thesis and Recent Research
-- Algorithmic design of chemical sensing data sets
-- Conditional GANs and novel evaluation metrics
-- Augmentation for chemical sensing
-- Pascal's wager for data augmentation
-- Self-Supervised learning and interactions with data augmentation
+* Conditional Generative Adversarial Nets
+    - Cycles between latent and data space
+    - Novel evaluation metrics
+
+* Data augmentation
+    - Intelligent augmentation with synthesis
+    - Pascal's wager for augmentation
+
+* Chemical Sensing
+    - Artificial olifactory systems
+    - Self-supervised learning with augmentations
+    - Algorithmic data set design
 
 ### Stuff I'm Proud of: Published Work, Preprints, and Projects
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52)
