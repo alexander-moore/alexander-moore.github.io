@@ -3,3 +3,4 @@ plugins:
   - jemoji
 title: [Alexander Moore]
 description: [Machine Learning PhD Student]
+markdown: kramdown
