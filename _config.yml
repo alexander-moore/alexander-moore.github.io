@@ -3,4 +3,4 @@ plugins:
   - jemoji
 title: [The title of my site]
 description: [A short description of my site]
-show_downloads: ["true"]
+show_downloads: ["false"]
