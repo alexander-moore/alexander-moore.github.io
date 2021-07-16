@@ -1,6 +1,6 @@
 ## About Me
 
-I love machine learning: particularly unsupervised or self-supervised learning. Currently a graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference)-related :blush:
+I love machine learning: particularly unsupervised or self-supervised learning. Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference)-related :blush:
 
 As part of my Master's degree, I performed year-long independent research on inducing cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that baseline GANs are consistently improved by moving samples between the latent and data spaces.
 
