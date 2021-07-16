@@ -1,6 +1,5 @@
 theme: jekyll-theme-leap-day
 plugins:
   - jemoji
-title: [The title of my site]
-description: [A short description of my site]
-show_downloads: ["false"]
+title: [Alexander Moore]
+description: [Machine Learning PhD Student]
