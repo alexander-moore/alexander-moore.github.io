@@ -4,9 +4,9 @@ I love machine learning: particularly unsupervised or self-supervised learning. 
 
 As part of my Master's degree, I performed year-long independent research on inducing cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces.
 
-I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference)-related :blush:.
+I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference)-related :blush:
 
-<img style="float: right;" src="images/thumbnail_Image.jpg" width="170">
+<img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
 
 ### Master's Thesis and Recent Research
