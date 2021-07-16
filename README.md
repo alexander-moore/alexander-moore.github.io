@@ -34,10 +34,10 @@ As part of my Master's degree, I performed year-long independent research on ind
     - Honors College Dean's List
 
 ### Experience
-* Graduate Research Assistant
+* Graduate Research Assistant, 2020-
     - Machine learning and deep learning research focusing on unsupervised and representation learning. Applied research cooperation with USARMY DEVCOM Soldier Center on data analysis and supervised learning.
-* Actuarial Intern: Milliman
+* Actuarial Intern: Milliman, 2018
     - Automated healthcare claims repricing with a novel software tool, removing the need for manual SQL claims repricing by actuarial scientists.
-* Undergraduate Educator
+* Undergraduate Educator, 2014-2016
     - Lectured on math topics and engaged in one-on-one learning with undergraduate students. Ability to approach both learning and teaching from many angles to best suit the diversity of student learners.
 
