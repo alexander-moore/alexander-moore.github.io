@@ -1,7 +1,10 @@
 ## About Me
 
-I love machine learning and particularly unsupervised or self-supervised learning.
-For my Master's degree, I did year-long independent research on inducing Cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference)-related :blush:.
+I love machine learning: and particularly unsupervised or self-supervised learning. Currently a graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth.
+
+As part of my Master's degree, I performed year-long independent research on inducing cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/) to demonstrate that all image synthesis models may be expressed as cycles between spaces.
+
+I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference)-related :blush:.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="170">
 
