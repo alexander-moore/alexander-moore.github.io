@@ -13,7 +13,7 @@ As part of my Master's degree, I performed year-long independent research on ind
 - Pascal's wager for data augmentation
 - Self-Supervised learning and interactions with data augmentation
 
-### Published Work, Preprints, and Projects
+### Stuff I'm Proud of: Published Work, Preprints, and Projects
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52)
     - Artificial Intelligence in Education 2021
 
