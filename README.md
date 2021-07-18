@@ -22,7 +22,8 @@ As part of my Master's degree, I performed year-long independent research on ind
 
 ### Stuff I'm Proud of: Published Work, Preprints, and Projects
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
-    - Artificial Intelligence in Education 2021
+    - Artificial Intelligence in Education Conference 2021
+    - Short paper and poster
 
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
     - Deep Learning Final Project 2021
