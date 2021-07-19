@@ -25,6 +25,10 @@ As part of my Master's degree, I performed year-long independent research on ind
     - Artificial Intelligence in Education Conference 2021
     - Short paper and poster
 
+* [Cycles Improve Conditional Generators]()
+    - WPI Data Science Master's Thesis 2021
+    - Under publishing embargo until late 2021
+
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
     - Deep Learning Final Project 2021
 
