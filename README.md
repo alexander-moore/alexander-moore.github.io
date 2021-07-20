@@ -14,6 +14,7 @@ As part of my Master's degree, I performed year-long independent research on ind
 * Data augmentation
     - Intelligent augmentation with synthesis
     - Pascal's wager for augmentation
+    - Mitigating augmentation leakage in GANs
 
 * Chemical Sensing
     - Artificial olifactory systems
