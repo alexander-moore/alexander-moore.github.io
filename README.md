@@ -9,11 +9,10 @@ As part of my Master's degree, I performed year-long independent research on ind
 ### Master's Thesis and Recent Research
 * Conditional Generative Adversarial Nets
     - Cycles between latent and data space
-    - Novel evaluation metrics
+    - Novel image evaluation metrics
 
 * Data augmentation
-    - Intelligent augmentation with synthesis
-    - Pascal's wager for augmentation
+    - Intelligent augmentation with sample synthesis
     - Mitigating augmentation leakage in GANs
 
 * Chemical Sensing
