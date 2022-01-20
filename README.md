@@ -1,24 +1,13 @@
 ## About Me
 
-I love machine learning: particularly unsupervised or self-supervised learning. Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
+I love machine learning: currently focusing on multi-task learning for more robust + data-efficient generative and supervised learners.
+
+Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
 
 As part of my Master's degree, I performed year-long independent research on inducing cycles for GANs, which borrowed from [CycleGAN](https://junyanz.github.io/CycleGAN/){:target="_blank" rel="noopener"} to demonstrate that baseline GANs are consistently improved by moving samples between the latent and data spaces.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
-### Master's Thesis and Recent Research
-* Conditional Generative Adversarial Nets
-    - Cycles between latent and data space
-    - Novel image evaluation metrics
-
-* Data augmentation
-    - Intelligent augmentation with sample synthesis
-    - Mitigating augmentation leakage in GANs
-
-* Chemical Sensing
-    - Artificial olifactory systems
-    - Self-supervised learning with augmentations
-    - Algorithmic data set design
 
 ### Stuff I'm Proud of: Published Work, Preprints, and Projects
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
@@ -34,6 +23,20 @@ As part of my Master's degree, I performed year-long independent research on ind
 
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525){:target="_blank" rel="noopener"}
     - Reinforcement Learning Final Project 2020
+
+### Master's Thesis and Recent Research
+* Conditional Generative Adversarial Nets
+    - Inducing ycles between latent and data space
+    - Novel image evaluation metrics
+
+* Data augmentation
+    - Intelligent augmentation with sample synthesis
+    - Mitigating augmentation leakage in GANs
+
+* Chemical Sensing
+    - Artificial olifactory systems
+    - Self-supervised learning with augmentations
+    - Algorithmic data set design
 
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
