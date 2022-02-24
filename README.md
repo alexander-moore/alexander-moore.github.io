@@ -1,6 +1,6 @@
 ## About Me
 
-I love machine learning: currently focusing on multi-task learning for more robust + data-efficient generative and supervised learners.
+I love deep learning: currently focusing on multi-task learning for more robust + data-efficient generative and supervised learners.
 
 Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
 
@@ -53,7 +53,7 @@ Currently a PhD student + graduate research assistant at Worcester Polytechnic I
 
 ### Experience
 * Graduate Research Assistant: Worcester Polytechnic University, 2020-
-    - Machine learning and deep learning research focusing on unsupervised and representation learning. Applied research cooperation with USARMY DEVCOM Soldier Center on data analysis and supervised learning.
+    - Deep learning research focusing on unsupervised and representation learning. Applied research cooperation with USARMY DEVCOM Soldier Center on data analysis and supervised learning.
 * Actuarial Intern: Milliman, 2018
     - Automated healthcare claims repricing with a novel software tool, removing the need for manual SQL claims repricing by actuarial scientists.
 * Undergraduate Educator: University of Arizona, 2014-2016
