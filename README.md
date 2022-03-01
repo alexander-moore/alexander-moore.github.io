@@ -2,7 +2,7 @@
 
 I love deep learning: currently focusing on multi-modal and multi-task learning for more robust + data-efficient generative and supervised learners.
 
-Ongoing research in computer vision, chemical sensors, and data synthesis with emphasis on out-of-distribution learning.
+Ongoing research in computer vision, chemical sensors, and data synthesis with emphasis on out-of-distribution learning. I am a full-time data scientist working with a team of surface chemists to improve the performance of a hardware sensor array. This work uses concrete approaches to data science including data integrity and results summarization, as well as modern deep learning applications to improve supervised learning outcomes for a small, complex data set.
 
 Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
 
