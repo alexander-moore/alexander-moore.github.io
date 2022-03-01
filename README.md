@@ -2,11 +2,11 @@
 
 I love deep learning: currently focusing on multi-task learning for more robust + data-efficient generative and supervised learners.
 
-Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute advised by Dr. Randy Paffenroth. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
+Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
-### Stuff I'm Proud of: Published Work, Preprints, and Projects
+### Projects I'm Proud of: Published Work, Preprints, and Group Projects
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
     - Artificial Intelligence in Education Conference 2021
     - Short paper and poster
