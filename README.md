@@ -23,7 +23,7 @@ Currently a PhD student + graduate research assistant at Worcester Polytechnic I
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525){:target="_blank" rel="noopener"}
     - **Reinforcement Learning** Final Project 2020
 
-### Master's Thesis and Recent Research
+### Recent Research Topics
 * Conditional Generative Adversarial Nets
     - Inducing cycles as additional tasks
     - Novel image evaluation metrics
