@@ -1,6 +1,6 @@
-## About Me
+## Alexander Moore
 
-I love deep learning: currently focusing on multi-task learning for more robust + data-efficient generative and supervised learners.
+I love deep learning: currently focusing on multi-modal and multi-task learning for more robust + data-efficient generative and supervised learners.
 
 Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
 
