@@ -4,7 +4,7 @@ I am a data scientist PhD student working with a team of surface chemists to imp
 
 I love deep learning: currently focusing on multi-modal and multi-task learning for more robust + data-efficient generative and supervised learners. Ongoing research in computer vision, chemical sensors, and data synthesis with emphasis on out-of-distribution learning.
 
-Currently a PhD student + graduate research assistant at Worcester Polytechnic Institute. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
+Currently a graduate research assistant at Worcester Polytechnic Institute. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
