@@ -11,7 +11,7 @@ Currently a graduate research assistant at Worcester Polytechnic Institute. I'm 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
 * [Cycles Improve Conditional Generators](https://github.com/alexander-moore/Cycles-Improve-Conditional-Generators){:target="_blank" rel="noopener"}
     - **International Conference on Advanced Data Mining and Applications** 2022
-    - Short paper and poster
+    - Paper and poster
     
 * [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
     - **Artificial Intelligence in Education Conference** 2021
