@@ -15,7 +15,7 @@ Currently a graduate research assistant at Worcester Polytechnic Institute. I'm 
 
 * [Cycles Improve Conditional Generators](https://github.com/alexander-moore/Cycles-Improve-Conditional-Generators){:target="_blank" rel="noopener"}
     - **Data Science Master's Thesis** 2021
-    - Submit to SIGKDD2022 Research Track
+    - Poster + Paper at [ADMA '22](https://adma2022.uqcloud.net/){:target="_blank" rel="noopener"}
 
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
     - **Deep Learning** Final Project 2021
