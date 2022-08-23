@@ -1,8 +1,8 @@
 ## Alexander Moore
 
-I am a data scientist + deep learning PhD candidate working with a team of surface chemists to improve the performance of a hardware sensor array. This work uses concrete approaches to data science including data integrity and results summarization, as well as modern deep learning applications to improve supervised learning outcomes for a small, challenging data set.
+I am a data scientist + deep learning PhD candidate using concrete approaches to data science including data integrity and results summarization, as well as advanced deep learning applications to improve supervised learning outcomes for a small, challenging data set.
 
-I love deep learning: currently focusing on multi-modal and multi-task learning for more robust + data-efficient generative and supervised learners. Ongoing research in computer vision, chemical sensors, and data synthesis with emphasis on out-of-distribution learning with pretrained representations.
+Ongoing research in computer vision, chemical sensors, and data synthesis emphasizes out-of-distribution learning with pretrained representations.
 
 Currently a graduate research assistant at Worcester Polytechnic Institute. I'm interested in everything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related :blush:
 
