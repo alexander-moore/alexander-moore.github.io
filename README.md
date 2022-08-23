@@ -9,14 +9,14 @@ Currently a graduate research assistant at Worcester Polytechnic Institute. I'm 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
-* [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
-    - **Artificial Intelligence in Education Conference** 2021
-    - Short paper and poster
-
 * [Cycles Improve Conditional Generators](https://github.com/alexander-moore/Cycles-Improve-Conditional-Generators){:target="_blank" rel="noopener"}
     - **Data Science Master's Thesis** 2021
     - Poster + Paper at [ADMA '22](https://adma2022.uqcloud.net/){:target="_blank" rel="noopener"}
-
+    
+* [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
+    - **Artificial Intelligence in Education Conference** 2021
+    - Short paper and poster
+    
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
     - **Deep Learning** Final Project 2021
 
