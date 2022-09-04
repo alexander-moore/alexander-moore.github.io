@@ -11,7 +11,7 @@ Currently a graduate research assistant at Worcester Polytechnic Institute. I'm 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
 
 * [ACGANs Improve Chemical Sensors for Challenging Distributions](https://github.com/alexander-moore/Cycles-Improve-Conditional-Generators){:target="_blank" rel="noopener"}
-    - **ICMLA** 2022
+    - **Internatioanl Conference on Machine Learning Applications** 2022
     - Oral presentation and paper
     
 * [Cycles Improve Conditional Generators](https://github.com/alexander-moore/Cycles-Improve-Conditional-Generators){:target="_blank" rel="noopener"}
