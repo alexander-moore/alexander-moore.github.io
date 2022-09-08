@@ -26,20 +26,6 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525){:target="_blank" rel="noopener"}
     - **Reinforcement Learning** Final Project 2020
 
-### Recent Research Topics
-* Conditional Generative Adversarial Nets
-    - Inducing cycles as additional tasks
-    - Novel image evaluation metrics
-
-* Data augmentation
-    - Intelligent augmentation with sample synthesis
-    - Mitigating augmentation leakage in GANs
-
-* Chemical Sensing
-    - Artificial olifactory systems
-    - Self-supervised learning with augmentations
-    - Algorithmic data set design
-
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
     - M.S. - Data Science 2019 - 2021
@@ -50,17 +36,3 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
     - Bachelor of Arts - Mathematics and Statistics 2016 - 2019
     - President's Commendation for Excellence
     - Dean's List 2016 - 2017
-
-* University of Arizona, Tucson Arizona
-    - Honors College Physics 2013-2016
-    - Wildcat Excellence Award
-    - Honors College Dean's List
-
-### Experience
-* Graduate Research Assistant: Worcester Polytechnic University, 2020-
-    - Deep learning research focusing on unsupervised and representation learning. Applied research cooperation with USARMY DEVCOM Soldier Center on data analysis and supervised learning.
-* Actuarial Intern: Milliman, 2018
-    - Automated healthcare claims repricing with a novel software tool, removing the need for manual SQL claims repricing by actuarial scientists.
-* Undergraduate Educator: University of Arizona, 2014-2016
-    - Lectured on math topics and engaged in one-on-one learning with undergraduate students. Ability to approach both learning and teaching from many angles to best suit the diversity of student learners.
-
