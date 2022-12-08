@@ -26,6 +26,8 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525){:target="_blank" rel="noopener"}
     - **Reinforcement Learning** Final Project 2020
 
+* [Novel Data Science Driven Chemical Agent Sensors](https://iopscience.iop.org/article/10.1149/MA2021-01541321mtgabs/meta){:target="_blank" rel="noopener"}
+
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
     - M.S. - Data Science 2019 - 2021
