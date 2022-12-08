@@ -11,9 +11,9 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
 
 * [Novel Data Science Driven Chemical Agent Sensors](https://iopscience.iop.org/article/10.1149/MA2021-01541321mtgabs/meta){:target="_blank" rel="noopener"}
     - **The Electrochemical Society** 2021
-    - 
+
 * [ACGANs Improve Chemical Sensors for Challenging Distributions](https://www.icmla-conference.org/icmla22/IEEE-ICMLA-2022-Conference-Program.pdf){:target="_blank" rel="noopener"}
-    - **Internatioanl Conference on Machine Learning Applications** 2022
+    - **International Conference on Machine Learning Applications** 2022
     - Oral presentation and paper
     
 * [Cycles Improve Conditional Generators](https://github.com/alexander-moore/Cycles-Improve-Conditional-Generators){:target="_blank" rel="noopener"}
