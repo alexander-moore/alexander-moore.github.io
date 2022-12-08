@@ -8,7 +8,11 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
 
-* ACGANs Improve Chemical Sensors for Challenging Distributions
+
+* [Novel Data Science Driven Chemical Agent Sensors](https://iopscience.iop.org/article/10.1149/MA2021-01541321mtgabs/meta){:target="_blank" rel="noopener"}
+    - **The Electrochemical Society** 2021
+    - 
+* [ACGANs Improve Chemical Sensors for Challenging Distributions](https://www.icmla-conference.org/icmla22/IEEE-ICMLA-2022-Conference-Program.pdf){:target="_blank" rel="noopener"}
     - **Internatioanl Conference on Machine Learning Applications** 2022
     - Oral presentation and paper
     
@@ -26,7 +30,6 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525){:target="_blank" rel="noopener"}
     - **Reinforcement Learning** Final Project 2020
 
-* [Novel Data Science Driven Chemical Agent Sensors](https://iopscience.iop.org/article/10.1149/MA2021-01541321mtgabs/meta){:target="_blank" rel="noopener"}
 
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
