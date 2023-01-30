@@ -9,10 +9,7 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
-
-
-* [Novel Data Science Driven Chemical Agent Sensors](https://iopscience.iop.org/article/10.1149/MA2021-01541321mtgabs/meta){:target="_blank" rel="noopener"}
-    - **The Electrochemical Society** 2021
+[Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
 * [ACGANs Improve Chemical Sensors for Challenging Distributions](https://www.icmla-conference.org/icmla22/IEEE-ICMLA-2022-Conference-Program.pdf){:target="_blank" rel="noopener"}
     - **International Conference on Machine Learning Applications** 2022
