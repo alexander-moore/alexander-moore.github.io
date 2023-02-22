@@ -27,7 +27,7 @@ Ongoing research in computer vision, applied surface chemistry, and data synthes
     - **International Conference on Educational Data Mining** 2022
 
 * [ChemVise: Maximizing Out-of-Distribution Chemical Detection with the Novel Application of Zero-Shot Learning](https://arxiv.org/abs/2302.04917){:target="_blank" rel="noopener"}
-    - Preprint for semantic transfer of molecular representation chemistry corpus
+    - **Preprint** for semantic transfer of molecular representation chemistry corpus
 
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
     - **Deep Learning** Final Project 2021
