@@ -1,10 +1,8 @@
 ## Alexander Moore
 
-I am a data scientist + deep learning PhD candidate using concrete approaches to data science paired with transfer learning to improve accuracy of real-world chemical sensors.
+I am a data scientist and deep learning PhD candidate working with Professor Randy Paffenroth. My research spans data processing, machine learning, and deep learning approaches to improve accuracy of real-world chemical sensors.
 
-Researching graph convolutional neural networks (GCNNs) with natural image processing techniques for improved molecular representation.
-
-Ongoing research in computer vision, applied surface chemistry, and data synthesis emphasizing out-of-distribution learning with pretrained representations - but I'm interested in anything [ICLR](https://openreview.net/group?id=ICLR.cc/2021/Conference){:target="_blank" rel="noopener"}-related.
+Ongoing research includes graph convolutional neural networks (GCNNs) with natural image processing techniques for improved molecular representation, training rapid **early classifiers** for **out-of-distribution time series data**, and **improved approaches to signal processing**.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
