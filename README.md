@@ -36,9 +36,9 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
-    - M.S. - Data Science 2019 - 2021
-    - Ph.D. - Data Science 2021 - 
-    - Presidential Fellowship 2019-2020
+    - M.S. - Data Science 2019 - 2021. 4.0/4.0 GPA
+    - Ph.D. - Data Science 2021 - 2023. 4.0/4.0 GPA
+    - $90,000 Annual Presidential Fellowship Award
 
 * Reed College, Portland Oregon
     - Bachelor of Arts - Mathematics and Statistics 2016 - 2019
