@@ -1,6 +1,6 @@
 ## Alexander Moore
 
-I am a data scientist and deep learning PhD candidate working with Professor Randy Paffenroth. My research spans data processing, machine learning, and deep learning approaches to improve accuracy of real-world chemical sensors.
+I am a data scientist and deep learning PhD candidate working with Professor Randy Paffenroth. [My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans data processing, machine learning, and deep learning approaches to improve accuracy of real-world chemical sensors.
 
 Ongoing research includes graph convolutional neural networks (GCNNs) with natural image processing techniques for improved molecular representation, training rapid **early classifiers** for **out-of-distribution time series data**, and **improved approaches to signal processing**.
 
