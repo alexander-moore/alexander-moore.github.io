@@ -9,11 +9,11 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
-* [ACGANs Improve Chemical Sensors for Challenging Distributions]([https://www.icmla-conference.org/icmla22/IEEE-ICMLA-2022-Conference-Program.pdf](https://conferences.computer.org/icmlapub/pdfs/ICMLA2022-1oIbEyrqlxdYNqIVuUdynF/628300a286/628300a286.pdf)){:target="_blank" rel="noopener"}
+* [ACGANs Improve Chemical Sensors for Challenging Distributions](https://conferences.computer.org/icmlapub/pdfs/ICMLA2022-1oIbEyrqlxdYNqIVuUdynF/628300a286/628300a286.pdf){:target="_blank" rel="noopener"}
     - **International Conference on Machine Learning Applications** 2022
     - Oral presentation and paper
     
-* [Cycles Improve Conditional Generators]([https://github.com/alexander-moore/Cycles-Improve-Conditional-Generators](https://link.springer.com/chapter/10.1007/978-3-031-22137-8_26)){:target="_blank" rel="noopener"}
+* [Cycles Improve Conditional Generators](https://link.springer.com/chapter/10.1007/978-3-031-22137-8_26){:target="_blank" rel="noopener"}
     - **International Conference on Advanced Data Mining and Applications** 2022
     - Paper and poster
     
