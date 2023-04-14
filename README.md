@@ -4,6 +4,8 @@ I am a data scientist and deep learning PhD candidate working with [Professor Ra
 
 Ongoing research includes graph convolutional neural networks (GCNNs) with natural image processing techniques for improved molecular representation, training rapid **early classifiers** for **out-of-distribution time series data**, and **improved approaches to signal processing**.
 
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="784bca6e-2ffc-4bb9-81d0-356f80104251" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
