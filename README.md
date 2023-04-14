@@ -7,6 +7,9 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="784bca6e-2ffc-4bb9-81d0-356f80104251" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
+<img style="float: right;" src="images/steal_their_meme.png" width="190">
+<img style="float: right;" src="images/segmentation_function.jpg" width="190">
+<img style="float: right;" src="images/subims.jpg" width="190">
 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
