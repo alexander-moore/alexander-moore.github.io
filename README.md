@@ -8,7 +8,7 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 
 
 
-### Projects I'm Proud of: Published Work, Preprints, and Group Projects
+### Select Publicaations and Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
 * [ACGANs Improve Chemical Sensors for Challenging Distributions](https://conferences.computer.org/icmlapub/pdfs/ICMLA2022-1oIbEyrqlxdYNqIVuUdynF/628300a286/628300a286.pdf){:target="_blank" rel="noopener"}
