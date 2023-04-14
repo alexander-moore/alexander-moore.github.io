@@ -8,7 +8,7 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 <img style="float: right;" src="images/steal_their_meme.png" width="190">
-<img style="float: right;" src="images/segmentation_functionpn.png" width="190">
+<img style="float: right;" src="images/segmentation_functiopn.png" width="190">
 <img style="float: right;" src="images/subims.png" width="190">
 <img style="float: right;" src="images/sample_meme.jpg" width="190">
 
