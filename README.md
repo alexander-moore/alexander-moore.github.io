@@ -49,15 +49,15 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="784bca6e-2ffc-4bb9-81d0-356f80104251" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
-![](images/sample_meme.jpg)
-*image_caption*
 
 <figure>
   <img src="images/sample_meme.jpg" alt="my alt text"/>
   <figcaption>This is my caption text.</figcaption>
 </figure>
 
-<img style="float: right;" src="images/sample_meme.jpg" width="500">
-<img style="float: right;" src="images/segmentation_functiopn.png" width="500">
-<img style="float: right;" src="images/subims.png" width="500">
+This is text that comes after my caption text
+
+<img style="float: right;" src="images/sample_meme.jpg" width="200">
+<img style="float: right;" src="images/segmentation_functiopn.png" width="200">
+<img style="float: right;" src="images/subims.png" width="200">
 <img style="float: right;" src="images/steal_their_meme.png" width="500">
