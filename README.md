@@ -52,6 +52,11 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 ![](images/sample_meme.jpg)
 *image_caption*
 
+<figure>
+  <img src="images/sample_meme.jpg" alt="my alt text"/>
+  <figcaption>This is my caption text.</figcaption>
+</figure>
+
 <img style="float: right;" src="images/sample_meme.jpg" width="500">
 <img style="float: right;" src="images/segmentation_functiopn.png" width="500">
 <img style="float: right;" src="images/subims.png" width="500">
