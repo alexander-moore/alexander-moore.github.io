@@ -10,6 +10,7 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 <img style="float: right;" src="images/steal_their_meme.png" width="190">
 <img style="float: right;" src="images/segmentation_functionpn.png" width="190">
 <img style="float: right;" src="images/subims.png" width="190">
+<img style="float: right;" src="images/sample_meme.png" width="190">
 
 ### Projects I'm Proud of: Published Work, Preprints, and Group Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
