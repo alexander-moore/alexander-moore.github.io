@@ -49,6 +49,8 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="784bca6e-2ffc-4bb9-81d0-356f80104251" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
+![](images/sample_meme.jpg)
+*image_caption*
 
 <img style="float: right;" src="images/sample_meme.jpg" width="190">
 <img style="float: right;" src="images/segmentation_functiopn.png" width="190">
