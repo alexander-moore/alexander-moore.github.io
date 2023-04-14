@@ -2,5 +2,5 @@ theme: jekyll-theme-leap-day
 plugins:
   - jemoji
 title: [Alexander Moore]
-description: [Deep Learning PhD Candidate]
+description: [PhD Candidate - Machine Learning Research]
 markdown: kramdown
