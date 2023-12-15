@@ -4,7 +4,7 @@ I am a PhD A.I. research scientist at Lawrence Livermore National Labratory.
 
 Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaffenroth/) for a PhD in Machine Learning 2019-2023.
 
-[My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans data processing, machine learning, and deep learning approaches to improve accuracy of real-world sensor devices.
+[My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans computer vision, foundation models, stable fine-tuning, and transfer learning for deep neural networks to improve real-world  application performance.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
