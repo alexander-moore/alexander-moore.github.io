@@ -45,8 +45,8 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
 
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
-    - M.S. - Data Science 2019 - 2021. 4.0/4.0 GPA
     - Ph.D. - Data Science 2021 - 2023. 4.0/4.0 GPA
+    - M.S. - Data Science 2019 - 2021. 4.0/4.0 GPA
     - $90,000 Annual Presidential Fellowship Award
 
 * Reed College, Portland Oregon
