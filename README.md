@@ -11,8 +11,12 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 ### Select Publicaations and Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
+* [ChemVise: Maximizing Out-of-Distribution Chemical Detection with the Novel Application of Zero-Shot Learning](https://arxiv.org/abs/2302.04917){:target="_blank" rel="noopener"}
+    - **International Conference on Machine Learning and Applications** 2023
+    - Oral presentation and paper
+
 * [ACGANs Improve Chemical Sensors for Challenging Distributions](https://conferences.computer.org/icmlapub/pdfs/ICMLA2022-1oIbEyrqlxdYNqIVuUdynF/628300a286/628300a286.pdf){:target="_blank" rel="noopener"}
-    - **International Conference on Machine Learning Applications** 2022
+    - **International Conference on Machine Learning and Applications** 2022
     - Oral presentation and paper
     
 * [Cycles Improve Conditional Generators](https://link.springer.com/chapter/10.1007/978-3-031-22137-8_26){:target="_blank" rel="noopener"}
@@ -26,9 +30,11 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 * [Identifying Explanations Within Student-Tutor Chatlogs](https://educationaldatamining.org/edm2022/proceedings/2022.EDM-doctoral-consortium.100/){:target="_blank" rel="noopener"}
     - **International Conference on Educational Data Mining** 2022
 
+<!-- a normal html comment
 * [ChemVise: Maximizing Out-of-Distribution Chemical Detection with the Novel Application of Zero-Shot Learning](https://arxiv.org/abs/2302.04917){:target="_blank" rel="noopener"}
     - **Preprint** for semantic transfer of molecular representation chemistry corpus
-
+ -->
+ 
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
     - **Deep Learning** Final Project 2021
 
