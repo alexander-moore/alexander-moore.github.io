@@ -1,11 +1,12 @@
 ## Alexander Moore
 
-I am a data scientist and deep learning PhD candidate working with [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaffenroth/). [My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans data processing, machine learning, and deep learning approaches to improve accuracy of real-world sensor devices.
+I am a PhD A.I. research scientist at Lawrence Livermore National Labratory.
 
-Ongoing research includes graph convolutional neural networks (GCNNs) with natural image processing techniques for improved molecular representation, training rapid **early classifiers** for **out-of-distribution time series data**, and **improved approaches to signal processing**.
+Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaffenroth/) for a PhD in Machine Learning 2019-2023.
+
+[My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans data processing, machine learning, and deep learning approaches to improve accuracy of real-world sensor devices.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
-
 
 
 ### Select Publicaations and Projects
@@ -50,7 +51,7 @@ Ongoing research includes graph convolutional neural networks (GCNNs) with natur
 
 * Reed College, Portland Oregon
     - Bachelor of Arts - Mathematics and Statistics 2016 - 2019
-    - President's Commendation for Excellence
+    - Presidential Commendation for Excellence
     - Dean's List 2016 - 2017
 
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="784bca6e-2ffc-4bb9-81d0-356f80104251" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
