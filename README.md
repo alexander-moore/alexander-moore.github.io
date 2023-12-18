@@ -31,10 +31,9 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
 * [Identifying Explanations Within Student-Tutor Chatlogs](https://educationaldatamining.org/edm2022/proceedings/2022.EDM-doctoral-consortium.100/){:target="_blank" rel="noopener"}
     - **International Conference on Educational Data Mining** 2022
 
-<!-- a normal html comment
-* [ChemVise: Maximizing Out-of-Distribution Chemical Detection with the Novel Application of Zero-Shot Learning](https://arxiv.org/abs/2302.04917){:target="_blank" rel="noopener"}
-    - **Preprint** for semantic transfer of molecular representation chemistry corpus
- -->
+* [ChemTime: Rapid and Early Classification for Multivariate Time Series Classification of Chemical Sensors](https://arxiv.org/abs/2312.09871){:target="_blank" rel="noopener"}
+    - **Preprint** 2023
+    - Semantic transfer of molecular representation chemistry corpus with early classification of multivariate time series
  
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
     - **Deep Learning** Final Project 2021
