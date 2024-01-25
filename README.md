@@ -1,6 +1,6 @@
 ## Alexander Moore
 
-I am a PhD A.I. research scientist at Lawrence Livermore National Labratory.
+I am a PhD A.I. research scientist at Lawrence Livermore National Laboratory.
 
 Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaffenroth/) for a PhD in Machine Learning 2019-2023.
 
@@ -9,7 +9,7 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
 
-### Select Publicaations and Projects
+### Select Publications and Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
 * [ChemVise: Maximizing Out-of-Distribution Chemical Detection with the Novel Application of Zero-Shot Learning](https://arxiv.org/abs/2302.04917){:target="_blank" rel="noopener"}
@@ -24,7 +24,7 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
     - **International Conference on Advanced Data Mining and Applications** 2022
     - Paper and poster
     
-* [Identifying Strugging Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
+* [Identifying Struggling Students by Comparing Online Tutor Clickstreams](https://link.springer.com/chapter/10.1007%2F978-3-030-78270-2_52){:target="_blank" rel="noopener"}
     - **Artificial Intelligence in Education** 2021
     - Short paper and poster
     
