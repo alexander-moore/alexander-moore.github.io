@@ -2,8 +2,7 @@
 
 I am a PhD A.I. research scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/).
 
-CASIS LLNL 2024 VLM 2-hour Tutorial Seminar
-CASIS LLNL 2024 Computational Objectness from Motion in Video Poster and Oral
+
 Directed Intern Research
 
 Current research includes video processing for computer vision and multimodal LLMs.  Developing a library for adapting [arbitrary vision and language models](https://github.com/alexander-moore/vlm) to be multimodal for improved transfer to special domains. This research uses specialized lightweight adapter modules alongside low-rank parameter-efficient finetuning ([LoRA](https://arxiv.org/abs/2106.09685), [QDoRA](https://github.com/nbasyl/DoRA?tab=readme-ov-file)) Future work will adapt fine-tuned domain expert LLMs and domain-specific data encoders to bring multimodality to the physical sciences. I am writing occasional updates about the design and implmentation of this research [here](https://medium.com/@ammpersonal77).
@@ -42,11 +41,13 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
     - Semantic transfer of molecular representation chemistry corpus with early classification of multivariate time series
  
 * [Model-Agnostic Meta Learning for Remote Sensing](https://github.com/alexander-moore/MAML-Augmentation){:target="_blank" rel="noopener"}
-    - **Deep Learning** Final Project 2021
+    - **Deep Learning - Computer Vision**
 
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525){:target="_blank" rel="noopener"}
-    - **Reinforcement Learning** Final Project 2020
+    - **Reinforcement Learning**
 
+* CASIS LLNL 2024 VLM Tutorial Seminar
+* CASIS LLNL 2024 Computational Objectness from Motion in Video Poster and Oral
 
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
