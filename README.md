@@ -48,6 +48,7 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
 
 * CASIS LLNL 2024 VLM Tutorial Seminar
 * CASIS LLNL 2024 Computational Objectness from Motion in Video Poster and Oral
+* [Stanford ICME Transformers and Large Language Models Workshop](https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/Alexander%20Moore%20-%20Transformers%20%26%20LLM%20Certificate.pdf)
 
 ### Education and Awards
 * Worcester Polytechnic Institute, Worcester Massachusetts
