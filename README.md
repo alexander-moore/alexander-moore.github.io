@@ -6,7 +6,7 @@ Current research includes video processing for computer vision and multimodal LL
 
 Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaffenroth/) for a PhD in Machine Learning 2019-2023.
 
-[My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans computer vision, foundation models, stable fine-tuning, and transfer learning for deep neural networks to improve real-world  application performance.
+[My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans computer vision for vide processing, LLMs / foundation models, stable fine-tuning, and transferrable representation learning for deep neural networks to improve real-world performance.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
 
