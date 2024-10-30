@@ -41,8 +41,8 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
 * [Benchmarking Policy Gradient and DQN-Family Reinforcement Learning Models on Discrete and Continuous Games](https://github.com/alexander-moore/CS525){:target="_blank" rel="noopener"}
     - **Reinforcement Learning**
 
-* CASIS LLNL 2024 Vision-Language LLMs From Scratch Tutorial Seminar
-* CASIS LLNL 2024 Computational Objectness from Motion in Video Poster and Oral
+* CASIS LLNL 2024 _Vision-Language LLMs From Scratch_ Tutorial Seminar
+* CASIS LLNL 2024 _Computational Objectness from Motion in Video_ Poster and Oral
 * [Stanford ICME Transformers and Large Language Models Workshop](https://github.com/alexander-moore/alexander-moore.github.io/blob/main/images/Alexander%20Moore%20-%20Transformers%20%26%20LLM%20Certificate.pdf)
 
 ### Education and Awards
