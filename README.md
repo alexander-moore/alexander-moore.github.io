@@ -1,4 +1,4 @@
-I am a Postdoctoral A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/). Current research includes video processing for computer vision and multimodal LLMs. Research and mentoring for video processing and computational objectness from video. 
+I am a Postdoctoral A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/). Current research includes video processing for computer vision and multimodal LLMs. Research and mentoring for video processing and computational objectness from video. Amodal segmentation and content completion from challenging, cluttered video scenes.
 
 Developing a library for adapting [arbitrary vision and language models](https://github.com/alexander-moore/vlm) to be multimodal for improved transfer to special domains. This research uses specialized lightweight adapter modules alongside low-rank parameter-efficient finetuning ([LoRA](https://arxiv.org/abs/2106.09685), [QDoRA](https://github.com/nbasyl/DoRA?tab=readme-ov-file)) Future work will adapt fine-tuned domain expert LLMs and domain-specific data encoders to bring multimodality to the physical sciences. I am writing occasional updates about the design and implmentation of this research [here](https://medium.com/@ammpersonal77).
 
@@ -12,6 +12,12 @@ Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaff
 ### Select Publications and Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
+* [An Analysis of Segment Anything 2](https://www.arxiv.org/abs/2503.00042){:target="_blank" rel="noopener"}
+    - Probing weaknesses of state-of-the-art video object segmentation model to find potential improvements for obscured object tracking.
+      
+* [Addressing Issues with Working Memory in Video Object Segmentation](https://arxiv.org/abs/2410.22451){:target="_blank" rel="noopener"}
+    - Modifying the working memory buffer in VOS models (SAM2, XMem, Cutie) can benefit the tracking of objects during intermission periods between relevant information.
+      
 * [ChemVise: Maximizing Out-of-Distribution Chemical Detection with the Novel Application of Zero-Shot Learning](https://arxiv.org/abs/2302.04917){:target="_blank" rel="noopener"}
     - **International Conference on Machine Learning and Applications** 2023
     - Oral presentation and paper
