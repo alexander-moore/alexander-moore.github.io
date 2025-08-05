@@ -10,6 +10,10 @@ Developing a library for adapting [arbitrary vision and language models](https:/
 ### Select Publications and Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
+
+* [Training for X-Ray Vision: MOVi-MC-AC](https://arxiv.org/abs/2507.00339){:target="_blank" rel="noopener"}
+    - First-ever dataset with ground-truth amodal content for occluded objects in cluttered video.
+      
 * [An Analysis of Segment Anything 2](https://www.arxiv.org/abs/2503.00042){:target="_blank" rel="noopener"}
     - Probing weaknesses of state-of-the-art video object segmentation model to find potential improvements for obscured object tracking.
       
