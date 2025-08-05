@@ -2,8 +2,6 @@ I am a Postdoctoral A.I. Research Scientist at [Lawrence Livermore National Labo
 
 Developing a library for adapting [arbitrary vision and language models](https://github.com/alexander-moore/vlm) to be multimodal for improved transfer to special domains. This research uses specialized lightweight adapter modules alongside low-rank parameter-efficient finetuning ([LoRA](https://arxiv.org/abs/2106.09685), [QDoRA](https://github.com/nbasyl/DoRA?tab=readme-ov-file)) Future work will adapt fine-tuned domain expert LLMs and domain-specific data encoders to bring multimodality to the physical sciences. I am writing occasional updates about the design and implmentation of this research [here](https://medium.com/@ammpersonal77).
 
-Previously advised by [Professor Randy Paffenroth](https://users.wpi.edu/~rcpaffenroth/) for a PhD in Machine Learning 2019-2023.
-
 [My research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans computer vision for video processing, LLMs / foundation models, stable fine-tuning, and transferrable representation learning for deep neural networks to improve real-world performance.
 
 <img style="float: right;" src="images/thumbnail_Image.jpg" width="190">
