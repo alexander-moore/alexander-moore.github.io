@@ -10,6 +10,8 @@ Developing a library for adapting [arbitrary vision and language models](https:/
 ### Select Publications and Projects
 [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}
 
+* [NovisVQ: A Streaming Convolutional Neural Network for No-Reference Opinion-Unaware Frame Quality Assessment](https://arxiv.org/abs/2511.04628){:target="_blank" rel="noopener"}
+    - (State-of-the-art*) Streaming, lightweight, no-reference video quality assessment.
 
 * [Training for X-Ray Vision: MOVi-MC-AC](https://arxiv.org/abs/2507.00339){:target="_blank" rel="noopener"}
     - First-ever dataset with ground-truth amodal content for occluded objects in cluttered video.
