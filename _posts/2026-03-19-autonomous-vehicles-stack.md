@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Independent AV Research: Getting Started with the Stack"
+title: "Alex's AV Blog 1: ML Ops for Solo Research"
 date: 2026-03-19
 description: "Documenting my process as an independent researcher building toward end-to-end autonomous driving from natural video — hardware, compute, data, and early goals."
 tags: [autonomous-vehicles, computer-vision, research, cloud-compute]
@@ -31,7 +31,8 @@ Eventually, I settled on the following workload, with the following requirements
 
 GPU compute is the bottleneck for all deep learning research. It is hard to avoid training or fine-tuning models during most research efforts. Finding a cloud compute provider for a non-expert was the first challenge in my workflow. I've tried to use AWS before and found it extremely overwhelming. A one-click solution with reasonable prices was my goal, which I found with [vast.ai](https://vast.ai) (sponsor me?). I also needed reasonable storage cost since I was interested in model training, not just inference hosting.
 
-<!-- IMAGE: vast.ai machine selection / pricing screenshot -->
+![description](/images/mlops.drawio.png)   
+  *Figure 1: Design of my ease-to-use research environment.*
 
 I found vast.ai to have a huge supply of available machines, low prices, and reasonable storage rates for training data. With no commitment!
 
@@ -39,7 +40,8 @@ I found vast.ai to have a huge supply of available machines, low prices, and rea
 
 ## Part 3: Process
 
-<!-- IMAGE: cheap-instance / expensive-instance workflow diagram -->
+![description](/images/instances.png)   
+  *Cheap instance hosts data and does some background work. "Expensive" instance is the torch compute.*
 
 I use a cheap-instance / expensive-instance setup. So far, my workflow has been:
 
@@ -61,8 +63,7 @@ The research process will start from experiments and proposing some fast feature
 
 Here's a teaser for some of the work I've done so far — discussed in the next post:
 
-<!-- IMAGE: teaser results / output visualization -->
-
+![description](/images/adv_seg_depth_validation_best.png)   
 ---
 
 Follow along with the code:
