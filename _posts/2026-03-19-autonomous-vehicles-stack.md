@@ -24,6 +24,8 @@ Eventually, I settled on the following workload, with the following requirements
 - Reproducibility of experiments and research efforts.
 
 > In solo research, a simple (cheap) workflow speeds up research iterations.
+![description](/images/mlops.drawio.png)   
+  *Figure 1: Vast.ai gives at-a-glance pricing breakdown of rates, TFLOPS/$/hr, and storage.*
 
 ---
 
@@ -32,7 +34,7 @@ Eventually, I settled on the following workload, with the following requirements
 GPU compute is the bottleneck for all deep learning research. It is hard to avoid training or fine-tuning models during most research efforts. Finding a cloud compute provider for a non-expert was the first challenge in my workflow. I've tried to use AWS before and found it extremely overwhelming. A one-click solution with reasonable prices was my goal, which I found with [vast.ai](https://vast.ai) (sponsor me?). I also needed reasonable storage cost since I was interested in model training, not just inference hosting.
 
 ![description](/images/mlops.drawio.png)   
-  *Figure 1: Design of my ease-to-use research environment.*
+  *Figure 2: Design of my ease-to-use research environment.*
 
 I found vast.ai to have a huge supply of available machines, low prices, and reasonable storage rates for training data. With no commitment!
 
@@ -41,7 +43,7 @@ I found vast.ai to have a huge supply of available machines, low prices, and rea
 ## Part 3: Process
 
 ![description](/images/instances.png)   
-  *Cheap instance hosts data and does some background work. "Expensive" instance is the torch compute.*
+  *Figure 3: Cheap instance hosts data and does some background work. "Expensive" instance is the torch compute.*
 
 I use a cheap-instance / expensive-instance setup. So far, my workflow has been:
 
@@ -64,6 +66,8 @@ The research process will start from experiments and proposing some fast feature
 Here's a teaser for some of the work I've done so far — discussed in the next post:
 
 ![description](/images/adv_seg_depth_validation_best.png)   
+  *Figure 4: Teaser for next post on depth+segmentation estimation from multicamera video.*
+
 ---
 
 Follow along with the code:
