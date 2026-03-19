@@ -4,6 +4,8 @@ title: "AV Blog 1: ML Ops for Solo Research"
 date: 2026-03-19
 description: "Documenting my process as an independent researcher building toward end-to-end autonomous driving from natural video — hardware, compute, data, and early goals."
 tags: [autonomous-vehicles, computer-vision, research, cloud-compute]
+image:
+  path: /images/price.png
 ---
 
 I have an ongoing obsession with computer vision for autonomous vehicles. I am starting this blog to document my process as an independent researcher catching up with the computer vision research which will (hopefully) be the future of driving.

@@ -1,0 +1,10 @@
+github:
+  name: GitHub
+  icon: icon-github
+  prepend: "https://github.com/"
+
+google_scholar:
+  name: Google Scholar
+  icon: icon-googlescholar
+  prepend: "https://scholar.google.com/citations?user="
+  append: "&hl=en&oi=sra"

@@ -21,6 +21,13 @@ favicon: /favicon.ico
 
 author:
   name: Alexander Moore
+  about: |
+    Former A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/).
+    Research in video object segmentation, multi-object tracking, and multimodal LLMs.
+    Independently building toward end-to-end autonomous driving from natural video.
+  social:
+    github: alexander-moore
+    google_scholar: Uq_mfNsAAAAJ
 
 menu:
   - title: About
@@ -64,4 +71,5 @@ defaults:
 
 markdown: kramdown
 kramdown:
+  math_engine: mathjax
   footnote_backlink: '&#x21a9;&#xfe0e;'

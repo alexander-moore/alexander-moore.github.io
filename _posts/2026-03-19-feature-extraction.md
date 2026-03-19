@@ -4,6 +4,8 @@ title: "AV Blog 2: Feature Extraction from Multi-Camera Video"
 date: 2026-03-19
 description: "Exploring the Bench2Drive dataset and drafting architectures for simultaneous depth and semantic segmentation from multicamera streaming video."
 tags: [autonomous-vehicles, computer-vision, depth-estimation, segmentation, u-net]
+image:
+  path: /images/adv_seg_depth_best_joint.gif
 ---
 
 Before we get to E2E driving, let's explore the Bench2Drive data and draft some architectures for multimodal feature extraction from multicamera streaming video!
