@@ -68,7 +68,7 @@ I introduce a few baselines to get started:
 ## Chapter 4: The Sim-to-Real Gap
 
 <figure>
-  <img src="/images/adv_seg_depth_dashcam_best.png" alt="First-draft model struggling to generalize to real-world video">
+  <img src="/images/adv_seg_depth_dashcam_best.gif" alt="First-draft model struggling to generalize to real-world video">
   <figcaption>Figure 4: In a first-draft model, we see how hard it is to generalize to real-world scenes: camera occlusion, motion blur, and complex scene dynamics.</figcaption>
 </figure>
 
