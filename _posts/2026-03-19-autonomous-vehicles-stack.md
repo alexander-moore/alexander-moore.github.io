@@ -24,7 +24,7 @@ Eventually, I settled on the following workload, with the following requirements
 - Reproducibility of experiments and research efforts.
 
 > In solo research, a simple (cheap) workflow speeds up research iterations.
-![description](/images/mlops.drawio.png)   
+![description](/images/price.png)   
   *Figure 1: Vast.ai gives at-a-glance pricing breakdown of rates, TFLOPS/$/hr, and storage.*
 
 ---
