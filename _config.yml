@@ -46,6 +46,7 @@ accent_image:
   overlay:    false
 
 hydejack:
+  no_navbar:           true
   no_search:           true
   no_break_layout:     true
   no_toc:              false
