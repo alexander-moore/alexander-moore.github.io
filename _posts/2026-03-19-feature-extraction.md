@@ -79,3 +79,8 @@ Real-world video perception introduces countless new challenges which simulation
 There are a few experiments worth exploring to close this simulation-to-reality gap, which plagues deployed computer vision systems and is omnipresent in robotics.
 
 [RAP 3D](https://arxiv.org/abs/2406.16228) argues that autonomous driving is not about simulating the most realistic graphics in which to train models, but that driving is about 3D perception, object motion, and environmental understanding — not high-fidelity graphics. They produce a highly-scalable synthetic data production engine with low-resolution graphics which mirrors the latent structure of real-world video under their custom vision encoder.
+
+<figure>
+  <img src="/images/rap3method.png" alt="RAP 3D method diagram">
+  <figcaption>Learning to drive depends on object motion dynamics, not high-resolution video.</figcaption>
+</figure>
