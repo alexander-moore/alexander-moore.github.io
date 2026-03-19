@@ -1,6 +1,43 @@
-theme: jekyll-theme-leap-day
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+
 plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-include-cache
   - jemoji
-title: [Alexander Moore]
-description: [Computer Vision Research Scientist]
+
+title: Alexander Moore
+description: Computer Vision Research Scientist
+url: "https://alexander-moore.github.io"
+
+author:
+  name: Alexander Moore
+  avatar: /images/thumbnail_Image.jpg
+  bio: Postdoctoral A.I. Research Scientist at Lawrence Livermore National Laboratory. Computer vision, multimodal LLMs, autonomous vehicles.
+  links:
+    - label: GitHub
+      icon: fab fa-fw fa-github
+      url: https://github.com/alexander-moore
+    - label: Google Scholar
+      icon: fas fa-fw fa-graduation-cap
+      url: https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra
+    - label: Medium
+      icon: fab fa-fw fa-medium
+      url: https://medium.com/@alex_20248
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author_profile: true
+      show_date: true
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
 markdown: kramdown

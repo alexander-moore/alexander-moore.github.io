@@ -1,19 +1,6 @@
 ---
-layout: default
+layout: single
 ---
-<article>
-  <header>
-    <h1>{{ page.title }}</h1>
-    <p><em>{{ page.date | date: "%B %d, %Y" }}</em>
-    {% if page.tags and page.tags != empty %}
-      &nbsp;&mdash;&nbsp;
-      {% for tag in page.tags %}<code>{{ tag }}</code> {% endfor %}
-    {% endif %}
-    </p>
-  </header>
+{{ content }}
 
-  {{ content }}
-
-  <hr>
-  <p><a href="/blog">&larr; All posts</a></p>
-</article>
+<p><a href="/blog">&larr; All posts</a></p>

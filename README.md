@@ -1,4 +1,8 @@
-[Autonomous Vehicles Blog](https://medium.com/@alex_20248) &nbsp;|&nbsp; [Blog](/blog)
+---
+layout: single
+title: Alexander Moore
+author_profile: true
+---
 
 I am a Postdoctoral A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/). Current research includes video processing for computer vision and multimodal LLMs. Research and mentoring for video processing and computational objectness from video. Amodal segmentation and content completion from challenging, cluttered video scenes.
 
