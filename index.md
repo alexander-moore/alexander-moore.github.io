@@ -3,7 +3,7 @@ layout: page
 title: Alexander Moore
 ---
 
-I'm documenting my independent research into computer vision for autonomous vehicles — [follow along on the blog](/blog).
+I'm documenting my independent research into computer vision for autonomous vehicles — [follow along on the blog](/blog) or see my [Google Scholar](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"}.
 
 I am a former A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/), working on computer vision for video understanding — video object segmentation, multi-object tracking (MOT), and amodal scene completion. My [research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans foundation model fine-tuning, transferrable representation learning, and real-world video perception. Independently, I'm building toward end-to-end autonomous driving from natural video: see [feature extraction from multi-camera video](https://github.com/alexander-moore/bench2drive-depth){:target="_blank" rel="noopener"} and [E2E driving](https://github.com/alexander-moore/drive_e2e){:target="_blank" rel="noopener"}.
 
