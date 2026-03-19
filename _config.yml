@@ -21,9 +21,6 @@ author:
     - label: Google Scholar
       icon: fas fa-fw fa-graduation-cap
       url: https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra
-    - label: Medium
-      icon: fab fa-fw fa-medium
-      url: https://medium.com/@alex_20248
 
 defaults:
   - scope:
