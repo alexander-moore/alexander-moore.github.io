@@ -7,8 +7,6 @@ I'm documenting my independent research into computer vision for autonomous vehi
 
 I am a former A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/), working on computer vision for video understanding — video object segmentation, multi-object tracking (MOT), and amodal scene completion. My [research](https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra){:target="_blank" rel="noopener"} spans foundation model fine-tuning, transferrable representation learning, and real-world video perception. Independently, I'm building toward end-to-end autonomous driving from natural video: see [feature extraction from multi-camera video](https://github.com/alexander-moore/bench2drive-depth){:target="_blank" rel="noopener"} and [E2E driving](https://github.com/alexander-moore/drive_e2e){:target="_blank" rel="noopener"}.
 
-<img style="float: right; margin-left: 1.5em;" src="images/thumbnail_Image.jpg" width="190">
-
 ### Select Publications
 
 * [NovisVQ: A Streaming Convolutional Neural Network for No-Reference Opinion-Unaware Frame Quality Assessment](https://arxiv.org/abs/2511.04628){:target="_blank" rel="noopener"}
