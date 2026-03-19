@@ -10,7 +10,7 @@ Before we get to E2E driving, let's explore the Bench2Drive data and draft some 
 
 <figure>
   <img src="/images/adv_seg_depth_best_joint.gif" alt="Depth and semantic segmentation on a Bench2Drive validation sample">
-  <figcaption>Figure 1: On a validation sample from Bench2Drive, we have a passable estimation of depth and semantic segmentation in just a few thousand training steps.</figcaption>
+  <figcaption>Figure 1: On a validation sample from Bench2Drive, we have a passable estimation of depth and semantic segmentation in just a few thousand training steps. This represents ~$5.00 of compute using an RTX 6000S.</figcaption>
 </figure>
 
 ---
