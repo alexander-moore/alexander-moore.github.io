@@ -82,5 +82,5 @@ There are a few experiments worth exploring to close this simulation-to-reality 
 
 <figure>
   <img src="/images/rap3method.png" alt="RAP 3D method diagram">
-  <figcaption>Learning to drive depends on object motion dynamics, not high-resolution video.</figcaption>
+  <figcaption><a href="https://alan-lanfeng.github.io/RAP/" target="_blank" rel="noopener">RAP</a>: Learning to drive depends on object motion dynamics, not high-resolution video.</figcaption>
 </figure>
