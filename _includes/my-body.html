@@ -7,14 +7,16 @@
 
 <style>
 .top-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
+  left: 0;
+  right: 0;
+  z-index: 999;
   display: flex;
   gap: 1.5em;
   padding: 0.6em 1.5em;
   background: rgb(25, 55, 71);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
 .top-nav a {
@@ -26,5 +28,10 @@
 
 .top-nav a:hover {
   color: #ffffff;
+}
+
+/* Push page content down so it isn't hidden under the bar */
+body {
+  padding-top: 2.5em;
 }
 </style>
