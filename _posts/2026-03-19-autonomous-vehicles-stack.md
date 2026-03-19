@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Alex's AV Blog 1: ML Ops for Solo Research"
+title: "AV Blog 1: ML Ops for Solo Research"
 date: 2026-03-19
 description: "Documenting my process as an independent researcher building toward end-to-end autonomous driving from natural video — hardware, compute, data, and early goals."
 tags: [autonomous-vehicles, computer-vision, research, cloud-compute]
