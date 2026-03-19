@@ -1,36 +1,50 @@
-<nav class="top-nav">
-  <a href="/">Home</a>
-  <a href="/blog">Blog</a>
-  <a href="https://github.com/alexander-moore" target="_blank" rel="noopener">GitHub</a>
-  <a href="https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener">Google Scholar</a>
-</nav>
+<header class="site-header">
+  <a class="site-header__name" href="/">Alexander Moore</a>
+  <nav class="site-header__nav">
+    <a href="/blog">Blog</a>
+    <a href="https://github.com/alexander-moore" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra" target="_blank" rel="noopener">Google Scholar</a>
+  </nav>
+</header>
 
 <style>
-.top-nav {
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
   display: flex;
-  gap: 1.5em;
-  padding: 0.6em 1.5em;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1.5em;
   background: rgb(25, 55, 71);
   box-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
-.top-nav a {
-  color: #e0e0e0;
+.site-header__name {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1em;
   text-decoration: none;
-  font-size: 0.9em;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
 }
 
-.top-nav a:hover {
+.site-header__nav {
+  display: flex;
+  gap: 1.5em;
+}
+
+.site-header__nav a {
+  color: #c0d0d8;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.site-header__nav a:hover {
   color: #ffffff;
 }
 
-/* Push page content down so it isn't hidden under the bar */
 body {
   padding-top: 2.5em;
 }
