@@ -1,26 +1,53 @@
-remote_theme: mmistakes/minimal-mistakes@4.26.2
+remote_theme: hydecorp/hydejack@v9
 
 plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
   - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jemoji
 
+lang:  en
 title: Alexander Moore
-description: Computer Vision Research Scientist
-url: "https://alexander-moore.github.io"
+
+description: >
+  Former A.I. Research Scientist at Lawrence Livermore National Laboratory.
+  Writing about computer vision, autonomous vehicles, and independent research.
+
+tagline: Computer Vision & AV Research
+
+logo: /images/thumbnail_Image.jpg
 
 author:
   name: Alexander Moore
-  avatar: /images/thumbnail_Image.jpg
-  bio: Former A.I. Research Scientist at Lawrence Livermore National Laboratory. Computer vision, multimodal LLMs, autonomous vehicles.
-  links:
-    - label: GitHub
-      icon: fab fa-fw fa-github
-      url: https://github.com/alexander-moore
-    - label: Google Scholar
-      icon: fas fa-fw fa-graduation-cap
-      url: https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra
+
+menu:
+  - title: About
+    url: /
+  - title: Blog
+    url: /blog
+  - title: Google Scholar
+    url: https://scholar.google.com/citations?user=Uq_mfNsAAAAJ&hl=en&oi=sra
+  - title: GitHub
+    url: https://github.com/alexander-moore
+
+accent_color: rgb(38, 80, 115)
+theme_color:  rgb(25, 55, 71)
+accent_image:
+  background: rgb(25, 55, 71)
+  overlay:    false
+
+hydejack:
+  no_search:           true
+  no_break_layout:     true
+  no_toc:              false
+  no_third_column:     false
+  no_large_headings:   false
+  hide_last_modified:  true
+  dark_mode:
+    always:  false
+    dynamic: true
+    icon:    true
 
 defaults:
   - scope:
@@ -28,13 +55,12 @@ defaults:
       type: posts
     values:
       layout: post
-      author_profile: true
-      show_date: true
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
-      author_profile: true
+      layout: page
 
 markdown: kramdown
+kramdown:
+  footnote_backlink: '&#x21a9;&#xfe0e;'

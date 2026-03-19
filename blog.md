@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: list
 title: Blog
-author_profile: true
+description: Writing about computer vision, autonomous vehicles, and independent research.
+grouped: true
 ---
