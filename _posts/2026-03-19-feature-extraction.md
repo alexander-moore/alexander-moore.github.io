@@ -9,7 +9,7 @@ tags: [autonomous-vehicles, computer-vision, depth-estimation, segmentation, u-n
 Before we get to E2E driving, let's explore the Bench2Drive data and draft some architectures for multimodal feature extraction from multicamera streaming video!
 
 <figure>
-  <img src="/images/blog2-fig1-depth-seg-validation.png" alt="Depth and semantic segmentation on a Bench2Drive validation sample">
+  <img src="/images/adv_seg_depth_best_joint.gif" alt="Depth and semantic segmentation on a Bench2Drive validation sample">
   <figcaption>Figure 1: On a validation sample from Bench2Drive, we have a passable estimation of depth and semantic segmentation in just a few thousand training steps.</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ We have tensors at training time of size `(batch_size, 6_cameras, t_frames, 3_rg
 We have quite a few architectures to explore for this task. I always gravitate towards a U-Net style architecture when the model target has the same spatial structure as the input — which is the case for both depth and segmentation.
 
 <figure>
-  <img src="/images/blog2-fig2-unet-architecture.png" alt="Multiscale U-Net architecture for depth and segmentation">
+  <img src="/images/conv_unet.drawio.png" alt="Multiscale U-Net architecture for depth and segmentation">
   <figcaption>Figure 2: A multiscale image encoder encodes incoming frames from a video stream. Multiscale features are decoded with skip connections directly to the encoder. The depth and semantic segmentation heads produce the logits for each task. These outputs may be beneficial to a downstream E2E planner.</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ I introduce a few baselines to get started:
 ## Chapter 3: Results and Metrics
 
 <figure>
-  <img src="/images/blog2-fig3-depth-relative.png" alt="Relative depth estimation from monocular images">
+  <img src="/images/rel_depth.png" alt="Relative depth estimation from monocular images">
   <figcaption>Figure 3: In the relative estimation of depth from monocular images, units of distance are relative between pixels in a frame and not useful for absolute depth estimation.</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ I introduce a few baselines to get started:
 ## Chapter 4: The Sim-to-Real Gap
 
 <figure>
-  <img src="/images/blog2-fig4-sim-to-real.png" alt="First-draft model struggling to generalize to real-world video">
+  <img src="/images/adv_seg_depth_dashcam_best.png" alt="First-draft model struggling to generalize to real-world video">
   <figcaption>Figure 4: In a first-draft model, we see how hard it is to generalize to real-world scenes: camera occlusion, motion blur, and complex scene dynamics.</figcaption>
 </figure>
 
