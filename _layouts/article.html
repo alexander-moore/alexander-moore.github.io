@@ -1,0 +1,50 @@
+---
+layout: post
+---
+
+<nav class="post-nav post-nav--top">
+  <span class="post-nav__prev">
+    {% if page.previous %}
+      &larr; <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+    {% endif %}
+  </span>
+  <span class="post-nav__index"><a href="/blog">All posts</a></span>
+  <span class="post-nav__next">
+    {% if page.next %}
+      <a href="{{ page.next.url }}">{{ page.next.title }}</a> &rarr;
+    {% endif %}
+  </span>
+</nav>
+
+<hr style="margin-bottom: 2em;">
+
+{{ content }}
+
+<hr style="margin-top: 2em;">
+
+<nav class="post-nav post-nav--bottom">
+  <span class="post-nav__prev">
+    {% if page.previous %}
+      &larr; <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+    {% endif %}
+  </span>
+  <span class="post-nav__index"><a href="/blog">All posts</a></span>
+  <span class="post-nav__next">
+    {% if page.next %}
+      <a href="{{ page.next.url }}">{{ page.next.title }}</a> &rarr;
+    {% endif %}
+  </span>
+</nav>
+
+<style>
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  font-size: 0.9em;
+}
+.post-nav__prev { text-align: left; flex: 1; }
+.post-nav__index { text-align: center; flex: 0 0 auto; white-space: nowrap; }
+.post-nav__next { text-align: right; flex: 1; }
+</style>

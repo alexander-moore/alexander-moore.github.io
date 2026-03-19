@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "AV Blog 2: Feature Extraction from Multi-Camera Video"
 date: 2026-03-19
 description: "Exploring the Bench2Drive dataset and drafting architectures for simultaneous depth and semantic segmentation from multicamera streaming video."
