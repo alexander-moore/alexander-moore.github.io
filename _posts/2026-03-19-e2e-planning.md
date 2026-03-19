@@ -170,17 +170,17 @@ The six architectures are not arbitrary — they form a controlled ablation ladd
 
 ### Axis 1: Visual Input
 
-| Model | Vision | Cameras | Parameters | Avg L2 (↓) |
-|---|---|---|---|---|
-| MLP Planner | None | — | 289K | — |
-| Transformer Planner | None | — | 1.4M | — |
-| ResNet Planner | ResNet50 (frozen) | 1 (front) | 33.2M | — |
-| Front Cam Planner | TinyViT (frozen) | 1 (front) | 29.6M | — |
-| FrontCam+Depth Planner | TinyViT (frozen) | 1 (front) | 35.7M | — |
-| ViT Planner (full) | TinyViT (frozen) | 6 (surround) | 41.8M | — |
-| *ThinkTwice (SOTA)* | — | — | — | *0.95* |
+| Model | Vision | Cameras | Parameters | Latency (ms) | FPS | Avg L2 (↓) |
+|---|---|---|---|---|---|---|
+| MLP Planner | None | — | 289K | 0.4 | 2550 | — |
+| Transformer Planner | None | — | 1.4M | 2.3 | 440 | — |
+| ResNet Planner | ResNet50 (frozen) | 1 (front) | 33.2M | 7.7 | 130 | — |
+| Front Cam Planner | TinyViT (frozen) | 1 (front) | 29.6M | 8.8 | 113 | — |
+| FrontCam+Depth Planner | TinyViT (frozen) | 1 (front) | 35.7M | 11.9 | 84 | — |
+| ViT Planner (full) | TinyViT (frozen) | 6 (surround) | 41.8M | 66.3 | 15 | — |
+| *ThinkTwice (SOTA)* | — | — | — | — | — | *0.95* |
 
-*Avg L2: mean L2 distance (meters) between predicted and ground-truth waypoints on the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) validation split. Lower is better. SOTA is 0.95m from ThinkTwice. Results populated as training completes.*
+*Avg L2: mean L2 distance (meters) between predicted and ground-truth waypoints on the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) validation split. Lower is better. SOTA is 0.95m from ThinkTwice. Results populated as training completes. Latency measured at batch size 1 on an RTX 3090 (fp32); Bench2Drive runs at 10 Hz so ≥10 FPS is required for real-time inference.*
 
 **Controls:** does vision help planning? Does more coverage (surround vs front only) help?
 
