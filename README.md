@@ -1,4 +1,4 @@
-[Autonomous Vehicles Blog](https://medium.com/@alex_20248)
+[Autonomous Vehicles Blog](https://medium.com/@alex_20248) &nbsp;|&nbsp; [Blog](/blog)
 
 I am a Postdoctoral A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/). Current research includes video processing for computer vision and multimodal LLMs. Research and mentoring for video processing and computational objectness from video. Amodal segmentation and content completion from challenging, cluttered video scenes.
 
