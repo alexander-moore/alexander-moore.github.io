@@ -22,9 +22,9 @@ favicon: /favicon.png
 author:
   name: Alexander Moore
   about: |
-    Former A.I. Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/).
+    AI Research Scientist at [Lawrence Livermore National Laboratory](https://www.llnl.gov/).
     Research in video object segmentation, multi-object tracking, and multimodal LLMs.
-    Independently building toward end-to-end autonomous driving from natural video.
+    Independently building toward explainable end-to-end vision-only autonomous driving.
   social:
     github: alexander-moore
     google_scholar: Uq_mfNsAAAAJ
