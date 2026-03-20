@@ -224,6 +224,23 @@ All models are evaluated on the **Bench2Drive validation split** using:
 
 Auxiliary task metrics (depth AbsRel, segmentation weighted IoU) are tracked separately to monitor auxiliary head quality and its correlation with trajectory performance.
 
+Here's a mid-training snapshot from TensorBoard:
+
+<figure>
+  <img src="/images/tb_train_loss.png" alt="TensorBoard training loss curves for all six models">
+  <figcaption>Training loss (step) across all six models.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/tb_val_ade.png" alt="TensorBoard validation ADE curves">
+  <figcaption>Validation Average Displacement Error (ADE). Vision-augmented models separate from the kinematics-only baselines (MLP, Transformer) as training progresses.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/tb_val_avg_l2.png" alt="TensorBoard validation average L2 curves">
+  <figcaption>Validation average L2 displacement error. The front_cam_depth model is currently leading, with the full surround ViT still converging.</figcaption>
+</figure>
+
 ---
 
 ### Hypotheses
@@ -236,28 +253,7 @@ Auxiliary task metrics (depth AbsRel, segmentation weighted IoU) are tracked sep
 
 ---
 
-## Chapter 4: Training Curves
-
-All six models are currently training under identical hyperparameters on the Bench2Drive dataset. Here's a snapshot from TensorBoard midway through training.
-
-<figure>
-  <img src="/images/tb_train_loss.png" alt="TensorBoard training loss curves for all six models">
-  <figcaption>Training loss (step) across all six models. The front camera and ViT-based models converge more slowly due to the larger parameter count, but reach lower final loss.</figcaption>
-</figure>
-
-<figure>
-  <img src="/images/tb_val_ade.png" alt="TensorBoard validation ADE curves">
-  <figcaption>Validation Average Displacement Error (ADE) over training steps. Vision-augmented models separate from the kinematics-only baselines (MLP, Transformer) as training progresses.</figcaption>
-</figure>
-
-<figure>
-  <img src="/images/tb_val_avg_l2.png" alt="TensorBoard validation average L2 curves">
-  <figcaption>Validation average L2 displacement error. Lower is better. The front_cam_depth model is currently leading on this metric, with the full ViT surround model still converging.</figcaption>
-</figure>
-
----
-
-## Chapter 5: What's Next
+## Chapter 4: What's Next
 
 With the architectures designed and the ablation storyboarded, the next steps are:
 
