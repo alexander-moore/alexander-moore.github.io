@@ -51,45 +51,13 @@ Losses are usually calculated as the L1 distance between the ground-truth trajec
 
 ## Chapter 5: Datasets and Benchmarks
 
-Before comparing methods, it's worth understanding what we're measuring — and how different benchmarks answer very different questions. The field has historically conflated three distinct evaluation problems: *how well can the model perceive*, *how well can it predict others*, and *how well can it actually drive*. The benchmarks below each illuminate one corner of that space.
+This project focuses on **vision-only end-to-end driving** — raw camera images in, trajectory out, no LiDAR. That scope rules out most classic AV benchmarks, which are built around LiDAR perception and open-loop evaluation. The two benchmarks that matter here are CARLA (the simulation environment) and Bench2Drive (which runs on top of it). nuScenes and nuPlan are worth knowing about, but as the Bench2Drive authors demonstrate, neither is well-suited for evaluating E2E vision planners.
 
-A key structural distinction runs through all of them: **open-loop vs. closed-loop** evaluation. Open-loop methods compare predicted trajectories against logged human trajectories — fast and reproducible, but known to be a poor proxy for driving performance. A model that drifts 0.3 m off the human path may be perfectly safe; one that exactly matches the human trajectory may be about to collide with a vehicle the human saw but the model did not. Closed-loop evaluation executes the model in simulation or the real world and measures actual driving outcomes, but is expensive and harder to reproduce across groups.
+The central methodological fault line is **open-loop vs. closed-loop** evaluation. Open-loop methods compare predicted trajectories against logged human trajectories — fast and reproducible, but a poor proxy for actual driving. The Bench2Drive paper shows this directly: UniAD achieves lower open-loop L2 error than VAD, yet performs *worse* in closed-loop simulation. Closed-loop evaluation, which executes the model in simulation and measures real driving outcomes, is the only reliable signal for whether a planner actually works.
 
----
+> **nuScenes** (Caesar et al., CVPR 2020, [arXiv:1903.11027](https://arxiv.org/abs/1903.11027)) — 1,000 scenes with cameras, LiDAR, and radar, primarily used for 3D detection and trajectory prediction. Not a planning benchmark; evaluation is open-loop; heavily LiDAR-centric despite the camera community's use of it. Not relevant for vision-only E2E driving evaluation.
 
-### nuScenes
-
-**Paper:** Caesar et al., CVPR 2020 ([arXiv:1903.11027](https://arxiv.org/abs/1903.11027))
-**Task focus:** 3D detection, tracking, trajectory prediction
-
-nuScenes set the template for modern AV datasets. It covers 1,000 twenty-second scenes (700 train / 150 val / 150 test) collected across Boston and Singapore using a full 360° sensor suite: 6 cameras (front, front-left, front-right, back, back-left, back-right), a 32-beam LiDAR, 5 radars, and GPS/IMU. Keyframes are annotated at 2 Hz, yielding ~40,000 annotated frames across 23 object classes.
-
-The **nuScenes Detection Score (NDS)** is a composite that goes beyond raw accuracy:
-
-```
-NDS = (1/10) × [5×mAP + TP_score(ATE) + TP_score(ASE) + TP_score(AOE) + TP_score(AVE) + TP_score(AAE)]
-```
-
-This penalizes errors in translation, scale, orientation, velocity, and attribute classification — not just localization. Detection uses center-distance thresholds (0.5–4 m) rather than IoU, which tends to inflate scores relative to KITTI-style evaluation.
-
-For trajectory prediction, the task is to forecast 6-second futures (12 waypoints at 2 Hz) for all agents. The standard metrics are **minADE** (minimum Average Displacement Error over K=5 predictions), **minFDE**, and **MissRate** (fraction of predictions with max pointwise L2 > 2 m).
-
-**What it misses:** nuScenes is a perception and prediction benchmark — it does not evaluate planning. The 32-beam LiDAR is sparse by modern standards, which partly explains why camera-only methods (BEVFormer, DETR3D, SparseBEV) have flourished here. The dataset is also small by modern standards; 1,000 scenes covering ~5.5 hours is orders of magnitude less than Waymo or nuPlan.
-
----
-
-### Waymo Open Dataset
-
-**Paper:** Sun et al., CVPR 2020 ([arXiv:1912.04838](https://arxiv.org/abs/1912.04838))
-**Task focus:** 3D detection, 3D tracking, motion prediction
-
-The Waymo Open Dataset is the most rigorous real-world perception benchmark in the field. The perception dataset covers 1,150 scenes (798 train / 202 val / 150 test), each 20 seconds at 10 Hz, collected in San Francisco, Phoenix, and Mountain View. The sensor rig is significantly more capable than nuScenes: 5 LiDARs (1 mid-range spinning top LiDAR + 4 short-range units) and 5 cameras, fully synchronized and calibrated.
-
-The key metric is **mAPH** — mean Average Precision weighted by heading accuracy. Every detected object must have correct orientation to count; a vehicle detected at the right location but pointing the wrong way is penalized. Results are stratified by difficulty: **LEVEL_1** (≥5 LiDAR points in the bounding box) and **LEVEL_2** (fewer than 5 points, i.e., distant or heavily occluded objects). LEVEL_2 is the headline metric in competitive submissions, and at 50–75 m range, objects may have 1–4 LiDAR points total.
-
-The **Waymo Open Motion Dataset (WOMD)** extends this to motion prediction: 103,354 segments, ~570 hours of unique driving data, with agent trajectories and HD maps. The annual Waymo Challenges at CVPR are widely regarded as the most competitive 3D perception leaderboards in the field.
-
-**What it misses:** Like nuScenes, Waymo is a perception and prediction benchmark — it does not execute a model in a real vehicle or simulation. Access requires a Google account and application approval; no commercial use is permitted and data cannot be redistributed, which limits community tooling. There is no planning evaluation.
+> **nuPlan** (Karnchanachari et al., 2021, [arXiv:2106.11810](https://arxiv.org/abs/2106.11810)) — a planning benchmark that provides ground-truth perception as input, bypassing the vision stack entirely. A well-tuned rule-based planner (PDM-Closed) outperformed all ML submissions in the 2023 challenge, suggesting the benchmark doesn't stress the parts of the problem that matter for E2E learning.
 
 ---
 
@@ -132,31 +100,14 @@ The central empirical finding of the Bench2Drive paper is pointed: **open-loop L
 
 **What it misses:** The dataset is entirely synthetic (CARLA). Short 150 m routes don't test long-horizon consistency. The training distribution reflects Think2Drive's driving style, which may not match what a learned model needs to see. A follow-up, **Bench2Drive-R** ([arXiv:2412.09647](https://arxiv.org/abs/2412.09647)), addresses the real-world gap by converting logged real-world data into reactive closed-loop scenarios via generative models.
 
----
+### What These Benchmarks Collectively Miss
 
-### nuPlan
+Even within the closed-loop vision-only scope, gaps remain:
 
-**Paper:** Karnchanachari et al., ECCV Workshop 2021 ([arXiv:2106.11810](https://arxiv.org/abs/2106.11810)); full benchmark paper [arXiv:2403.04133](https://arxiv.org/abs/2403.04133)
-**Task focus:** Planning only (perception given as ground truth)
-
-nuPlan occupies a different niche: it tests the planning module in isolation. Given ground-truth agent states, HD map, and a navigation goal, the model must output an 8-second future trajectory. Perception is assumed solved. The dataset covers ~1,300 hours across four cities (Las Vegas, Boston, Pittsburgh, Singapore) with a rich scenario taxonomy.
-
-Evaluation runs in three modes of increasing realism: open-loop comparison to logged trajectories, closed-loop with scripted (non-reactive) background agents, and closed-loop with **IDM/MOBIL** reactive agents. The primary metric is the **Closed-Loop Score (CLS)**, a composite of comfort, collision avoidance, time-to-collision, progress, and lane compliance.
-
-The nuPlan 2023 challenge produced a striking result: a well-tuned rule-based baseline (PDM-Closed, scoring ~92–93) outperformed all submitted ML planners, raising questions about whether the benchmark actually tests generalization — or just rewards conservative behavior in a dataset dominated by stopped-at-red-light scenarios (~45% of frames). The **nuPlan-R** extension ([arXiv:2511.10403](https://arxiv.org/abs/2511.10403)) replaces IDM with learned diffusion-based reactive agents to increase the challenge.
-
-**What it misses:** nuPlan evaluates planning in isolation — sensor noise, occlusion, and detection failures are all outside its scope. IDM background agents are simplified and don't capture real traffic dynamics. And since perception is given, nuPlan cannot measure the compounding errors that make real E2E driving hard.
-
----
-
-### What the Benchmarks Collectively Miss
-
-No single benchmark captures the full picture:
-
-- **Real-world closed-loop evaluation at scale** doesn't exist as a public benchmark. Waymo and nuScenes use real data but evaluate offline. CARLA and Bench2Drive close the loop but run in simulation.
-- **Sensor-realistic closed-loop evaluation** is largely absent — benchmarks either use real sensors with open-loop evaluation, or simulated sensors with closed-loop evaluation, but rarely both.
-- **Long-tail and out-of-distribution scenarios** are underrepresented. Bench2Drive's 44 scenario types cover common critical events, but rare naturalistic scenarios (e.g., unusual road markings, construction zones, sensor degradation) are not systematically benchmarked.
-- **The open-loop / closed-loop correlation problem** remains open: it is still unclear what open-loop metric, if any, reliably predicts closed-loop performance. Bench2Drive's finding that L2 does not is a starting point, not a resolution.
+- **Sim-to-real transfer** is unvalidated. Both CARLA and Bench2Drive use UE4 graphics, which are not photorealistic. Models that score well in simulation may not transfer to real camera images.
+- **Short routes** in Bench2Drive (~150 m each) don't test long-horizon consistency — a model that handles each scenario in isolation may still fail on a multi-minute real drive.
+- **Non-reactive background traffic** means agents can exploit scripted behavior patterns rather than learning to respond to genuine interaction.
+- **The open-loop / closed-loop correlation problem** is still open: no open-loop metric reliably predicts closed-loop performance. Bench2Drive establishes that L2 doesn't — but doesn't yet tell us what does.
 
 
 ---
