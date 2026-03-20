@@ -40,7 +40,7 @@ GPU compute is the bottleneck for all deep learning research. It is hard to avoi
 
 I found vast.ai to have a huge supply of available machines, low prices, and reasonable storage rates for training data. With no commitment!
 
-To make the cost difference concrete, here's a side-by-side comparison for a V100 — the GPU I've been using for training:
+To make the cost difference concrete, here's a side-by-side comparison for a V100 example instance:
 
 <div style="display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start;">
   <figure style="flex: 1; min-width: 280px; margin: 0;">
@@ -53,7 +53,7 @@ To make the cost difference concrete, here's a side-by-side comparison for a V10
   </figure>
 </div>
 
-The same GPU costs about **13× more on Google Cloud** than on Vast.ai. For a research project that runs hundreds of training hours, that difference is the line between feasible and not.
+The same GPU costs about **13× more on Google Cloud** than on Vast.ai. For a research project that runs hundreds of training hours, that is a crazy difference.
 
 ---
 
