@@ -1,7 +1,7 @@
 ---
 layout: article
-title: "AV Blog 3: End-to-End Trajectory Planning from Vision"
-date: 2026-03-19
+title: "AV Blog 4: End-to-End Trajectory Planning from Vision"
+date: 2026-03-20
 description: "Designing and ablating a suite of neural planners — from a pure-kinematics MLP baseline through vision-augmented transformer architectures with auxiliary depth supervision."
 tags: [autonomous-vehicles, computer-vision, transformers, trajectory-planning, ablation-study]
 image:
