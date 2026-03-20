@@ -239,7 +239,7 @@ Here's a mid-training snapshot from TensorBoard:
 
 <figure>
   <img src="/images/tb_val_avg_l2.png" alt="TensorBoard validation average L2 curves">
-  <figcaption>Validation average L2 displacement error. The front_cam_depth model is currently leading, with the full surround ViT still converging.</figcaption>
+  <figcaption>Validation average L2 displacement error. The Resnet+transformer model is currently leading in this metric. The [Bench2Drive]([url](https://github.com/Thinklab-SJTU/Bench2Drive)) authors warn against evaluating models in these open-loop metrics as they may not correlate to real-world driving performance.</figcaption>
 </figure>
 
 ---
