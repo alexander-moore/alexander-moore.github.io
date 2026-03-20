@@ -51,7 +51,7 @@ Losses are usually calculated as the L1 distance between the ground-truth trajec
 
 ## Chapter 5: Datasets and Benchmarks
 
-This project focuses on **vision-only end-to-end driving** — raw camera images in, trajectory out, no LiDAR. That scope rules out most classic AV benchmarks, which are built around LiDAR perception and open-loop evaluation. The two benchmarks that matter here are CARLA (the simulation environment) and Bench2Drive (which runs on top of it). nuScenes and nuPlan are worth knowing about, but as the Bench2Drive authors demonstrate, neither is well-suited for evaluating E2E vision planners.
+This project focuses on **vision-only end-to-end driving** — raw camera images in, trajectory out, no LiDAR. That scope rules out most classic AV benchmarks, which are built around LiDAR perception and open-loop evaluation. The three benchmarks that matter here are CARLA/Bench2Drive (simulation-based, closed-loop) and the Waymo Vision-based E2E Challenge (real-world, open-loop with a novel human-preference metric). nuScenes and nuPlan are worth knowing about, but as the Bench2Drive authors demonstrate, neither is well-suited for evaluating E2E vision planners.
 
 The central methodological fault line is **open-loop vs. closed-loop** evaluation. Open-loop methods compare predicted trajectories against logged human trajectories — fast and reproducible, but a poor proxy for actual driving. The Bench2Drive paper shows this directly: UniAD achieves lower open-loop L2 error than VAD, yet performs *worse* in closed-loop simulation. Closed-loop evaluation, which executes the model in simulation and measures real driving outcomes, is the only reliable signal for whether a planner actually works.
 
@@ -99,6 +99,31 @@ Metrics follow the CARLA Leaderboard formula (DS = RC × IS) with two modificati
 The central empirical finding of the Bench2Drive paper is pointed: **open-loop L2 error does not predict closed-loop Driving Score**. UniAD achieves lower L2 than VAD on the open-loop validation set, yet scores worse in closed-loop simulation. This is the main reason this project uses Bench2Drive over open-loop benchmarks.
 
 **What it misses:** The dataset is entirely synthetic (CARLA). Short 150 m routes don't test long-horizon consistency. The training distribution reflects Think2Drive's driving style, which may not match what a learned model needs to see. A follow-up, **Bench2Drive-R** ([arXiv:2412.09647](https://arxiv.org/abs/2412.09647)), addresses the real-world gap by converting logged real-world data into reactive closed-loop scenarios via generative models.
+
+---
+
+### Waymo Vision-Based End-to-End Driving Challenge
+
+**Dataset paper:** Xu et al., 2025 ([arXiv:2510.26125](https://arxiv.org/abs/2510.26125))
+**Task focus:** Open-loop waypoint prediction from real-world cameras, long-tail scenarios
+
+The **WOD-E2E** dataset is Waymo's first vision-only E2E benchmark, introduced as a CVPR 2025 challenge track. It is the only major real-world camera-only E2E benchmark currently available. The task: given 12 seconds of 8-camera 360° video (10 Hz), ego state history, and a high-level routing command, predict the next 5 seconds of waypoints (at 4 Hz).
+
+The dataset is deliberately focused on **long-tail scenarios** — rare events that occur at less than 0.03% frequency in normal driving logs (construction zones during events, pedestrians falling, unexpected freeway obstacles). This makes it harder and more safety-relevant than benchmarks sampled uniformly from routine driving.
+
+| Split | Segments | Duration |
+|---|---|---|
+| Train | 2,037 | ~6.8 hr |
+| Val | 479 | ~1.6 hr |
+| Test (held-out) | 1,505 | ~5.0 hr |
+
+The standout methodological contribution is the **Rater Feedback Score (RFS)** — a human-preference metric designed to replace geometric distance metrics in long-tail settings. Three human raters independently score each predicted trajectory on safety, legality, reaction time, braking necessity, and efficiency (0–10 scale). A trust region is defined around the rater's own reference trajectory; predictions within the region receive full score, outside it the score decays exponentially. Final RFS is the max score across raters, averaged over time. The paper shows RFS has much stronger correlation with real driving quality in rare scenarios than ADE does.
+
+The inaugural 2025 challenge drew 19 submissions. A notable result: the **Poutine** team (Mila, Quebec AI Institute) topped the public leaderboard at RFS 7.986 using a two-stage approach — vision-language-trajectory pre-training followed by GRPO reinforcement learning from fewer than 500 human-labeled preference frames. They were granted a Special Mention (ineligible for prizes under competition rules). The prize-eligible winner was **UniPlan** (EPFL, RFS 7.779), a diffusion-based unified planner. Third place went to **Swin-Trajectory** (Hanyang University, RFS 7.543), a lightweight Swin Transformer approach with 36M parameters.
+
+**What it misses:** Evaluation is open-loop — the model is never actually executed in a vehicle or simulation, so collision avoidance and reactive behavior are not directly tested. The RFS metric, while more informative than ADE, still relies on logged trajectories as reference and inherits biases from human rater judgment. The dataset is also small (~12 hours total) compared to large-scale simulation benchmarks.
+
+---
 
 ### What These Benchmarks Collectively Miss
 
