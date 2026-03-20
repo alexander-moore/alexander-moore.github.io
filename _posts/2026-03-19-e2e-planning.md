@@ -15,6 +15,10 @@ This post introduces six model architectures of increasing complexity, and lays 
 ---
 
 ## Chapter 1: The Task
+<figure>
+  <img src="/images/vision_former_traj.png" alt="MLP Planner architecture diagram">
+  <figcaption>Figure 1: End-to-end training estimates the future trajectory from the past trajectory and kinematics. In this example, Architecture 4 (front camera planner) predicts a stop at the end of the 5-second sequence - but stops too early.</figcaption>
+</figure>
 
 The planner takes in a window of recent sensor data and must predict the **next 50 future waypoints** of the ego vehicle. Inputs available at each timestep:
 
@@ -44,7 +48,7 @@ The simplest possible baseline. All kinematic inputs are flattened into a single
 
 <figure>
   <img src="/images/claude_mlp_planner_horizontal.svg" alt="MLP Planner architecture diagram">
-  <figcaption>Figure 1: The MLP Planner flattens all kinematic inputs — trajectory, speed, acceleration, and one-hot command — into a single 286-dim vector and passes it through 4 hidden layers to predict 50 future waypoints.</figcaption>
+  <figcaption>Figure 2: The MLP Planner flattens all kinematic inputs — trajectory, speed, acceleration, and one-hot command — into a single 286-dim vector and passes it through 4 hidden layers to predict 50 future waypoints.</figcaption>
 </figure>
 
 **Key design choices:**
@@ -63,7 +67,7 @@ The same kinematic inputs — but rather than flattening, we preserve the **temp
 
 <figure>
   <img src="/images/claude_transformer_planner_horizontal.svg" alt="Transformer Planner architecture diagram">
-  <figcaption>Figure 2: The Transformer Planner preserves the temporal axis of kinematic data. Each past timestep is encoded as a 10-dim token (x, y, speed, acc_xyz, command), projected to d=128, and processed by a 3-layer transformer encoder. A 3-layer decoder with 50 learned query embeddings auto-regressively attends to the encoded history.</figcaption>
+  <figcaption>Figure 3: The Transformer Planner preserves the temporal axis of kinematic data. Each past timestep is encoded as a 10-dim token (x, y, speed, acc_xyz, command), projected to d=128, and processed by a 3-layer transformer encoder. A 3-layer decoder with 50 learned query embeddings auto-regressively attends to the encoded history.</figcaption>
 </figure>
 
 **Key design choices:**
@@ -84,7 +88,7 @@ Now we add vision. The front camera is encoded with a **frozen, pretrained ResNe
 
 <figure>
   <img src="/images/claude_resnet_planner_horizontal_v2.svg" alt="ResNet Planner architecture diagram">
-  <figcaption>Figure 3: The ResNet Planner uses a frozen ResNet50 to extract visual features from the front camera. Feature maps at 7×7 (and optionally 56×56 through 7×7 multiscale) are projected to d=128 tokens. A kinematic encoder processes trajectory history, and a FlexDecoder cross-attends to both visual and kinematic sources to predict the trajectory.</figcaption>
+  <figcaption>Figure 4: The ResNet Planner uses a frozen ResNet50 to extract visual features from the front camera. Feature maps at 7×7 (and optionally 56×56 through 7×7 multiscale) are projected to d=128 tokens. A kinematic encoder processes trajectory history, and a FlexDecoder cross-attends to both visual and kinematic sources to predict the trajectory.</figcaption>
 </figure>
 
 **Key design choices:**
@@ -106,7 +110,7 @@ Swaps the ResNet50 backbone for a **frozen TinyViT** — a lightweight Vision Tr
 
 <figure>
   <img src="/images/claude_front_cam_planner_horizontal.svg" alt="Front Camera Planner architecture diagram">
-  <figcaption>Figure 4: The Front Camera Planner uses TinyViT as the visual backbone (frozen). Multiscale visual tokens are combined with kinematic encoder output and decoded by a FlexDecoder to predict 50 future waypoints. 2D sincos positional encodings are used for visual tokens; 1D sincos for kinematics.</figcaption>
+  <figcaption>Figure 5: The Front Camera Planner uses TinyViT as the visual backbone (frozen). Multiscale visual tokens are combined with kinematic encoder output and decoded by a FlexDecoder to predict 50 future waypoints. 2D sincos positional encodings are used for visual tokens; 1D sincos for kinematics.</figcaption>
 </figure>
 
 **Key design choices:**
@@ -125,7 +129,7 @@ Adds an **auxiliary depth estimation head** to the Front Camera Planner. The hyp
 
 <figure>
   <img src="/images/claude_front_cam_depth_planner_v2.svg" alt="Front Camera Depth Planner architecture diagram">
-  <figcaption>Figure 5: The Front Camera Depth Planner adds a separate depth decoder head alongside the trajectory decoder. Both share the same frozen TinyViT visual tokens and kinematic encoder. Depth supervision is applied when ground-truth depth maps are available in the batch.</figcaption>
+  <figcaption>Figure 6: The Front Camera Depth Planner adds a separate depth decoder head alongside the trajectory decoder. Both share the same frozen TinyViT visual tokens and kinematic encoder. Depth supervision is applied when ground-truth depth maps are available in the batch.</figcaption>
 </figure>
 
 **Key design choices:**
@@ -147,7 +151,7 @@ The full architecture: **six surround cameras**, multiscale TinyViT features, ki
 
 <figure>
   <img src="/images/claude_vision_transformer_planner.svg" alt="Vision Transformer Planner architecture diagram">
-  <figcaption>Figure 6: The Vision Transformer Planner processes all 6 onboard cameras with a shared frozen TinyViT backbone. Multiscale features from all cameras are pooled and combined with kinematic encoding. Separate decoders predict the future trajectory (primary), depth map, and semantic segmentation (auxiliary).</figcaption>
+  <figcaption>Figure 7: The Vision Transformer Planner processes all 6 onboard cameras with a shared frozen TinyViT backbone. Multiscale features from all cameras are pooled and combined with kinematic encoding. Separate decoders predict the future trajectory (primary), depth map, and semantic segmentation (auxiliary).</figcaption>
 </figure>
 
 **Key design choices:**
