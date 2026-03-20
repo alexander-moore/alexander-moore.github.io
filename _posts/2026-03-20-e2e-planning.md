@@ -7,6 +7,7 @@ tags: [autonomous-vehicles, computer-vision, transformers, trajectory-planning, 
 image:
   path: /images/claude_vision_transformer_planner.svg
 ---
+(Note: Sections of this post, and the architecture figures, were produced by LLMs)
 
 With depth and segmentation extraction covered in the last post, it's time to tackle the core problem: **end-to-end trajectory planning**. Given sensor history, where should the car go next?
 
