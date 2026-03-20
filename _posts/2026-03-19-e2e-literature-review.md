@@ -5,6 +5,7 @@ date: 2026-03-19
 description: "A survey of key papers in end-to-end autonomous driving — covering foundational approaches, recent transformer-based planners, and the open problems that motivate this work."
 tags: [autonomous-vehicles, computer-vision, literature-review, transformers, trajectory-planning]
 ---
+(Note: The explanation of E2E vision benchmarks was produced by LLMs)
 
 Before designing a planner, it helps to understand what has already been tried. This post surveys the key literature in end-to-end autonomous driving — the papers that define the problem, establish baselines, and point toward what remains unsolved.
 
