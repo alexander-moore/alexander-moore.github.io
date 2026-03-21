@@ -5,7 +5,7 @@ date: 2026-03-21
 description: "Taking a trained trajectory planner off the GPU and into a live CARLA simulation: sensor I/O, coordinate transforms, a trajectory controller, and first benchmark results on Bench2Drive."
 tags: [autonomous-vehicles, computer-vision, trajectory-planning, carla, bench2drive]
 image:
-  path: /images/model_hardbreak.gif
+  path: /images/train_viz_hardbreak.gif
 ---
 (Note: Sections of this post were produced with LLM assistance)
 
