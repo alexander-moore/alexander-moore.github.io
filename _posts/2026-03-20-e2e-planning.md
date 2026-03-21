@@ -13,6 +13,23 @@ With depth and segmentation extraction covered in the last post, it's time to ta
 
 This post introduces six model architectures of increasing complexity, and lays out the ablation study designed to understand which components of a vision-augmented planner actually matter.
 
+Here's a mid-training snapshot from TensorBoard:
+
+<figure>
+  <img src="/images/tb_train_loss.png" alt="TensorBoard training loss curves for all six models">
+  <figcaption>Training loss (step) across all six models.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/tb_val_ade.png" alt="TensorBoard validation ADE curves">
+  <figcaption>Validation Average Displacement Error (ADE). Vision-augmented models separate from the kinematics-only baselines (MLP, Transformer) as training progresses.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/tb_val_avg_l2.png" alt="TensorBoard validation average L2 curves">
+  <figcaption>Validation average L2 displacement error. The Resnet+transformer model is currently leading in this metric. The [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) authors warn against evaluating models in these open-loop metrics as they may not correlate to real-world driving performance.</figcaption>
+</figure>
+
 ---
 
 ## Chapter 1: The Task
@@ -224,23 +241,6 @@ All models are evaluated on the **Bench2Drive validation split** using:
 - **Collision rate** (% of rollouts with ego-obstacle contact, when available)
 
 Auxiliary task metrics (depth AbsRel, segmentation weighted IoU) are tracked separately to monitor auxiliary head quality and its correlation with trajectory performance.
-
-Here's a mid-training snapshot from TensorBoard:
-
-<figure>
-  <img src="/images/tb_train_loss.png" alt="TensorBoard training loss curves for all six models">
-  <figcaption>Training loss (step) across all six models.</figcaption>
-</figure>
-
-<figure>
-  <img src="/images/tb_val_ade.png" alt="TensorBoard validation ADE curves">
-  <figcaption>Validation Average Displacement Error (ADE). Vision-augmented models separate from the kinematics-only baselines (MLP, Transformer) as training progresses.</figcaption>
-</figure>
-
-<figure>
-  <img src="/images/tb_val_avg_l2.png" alt="TensorBoard validation average L2 curves">
-  <figcaption>Validation average L2 displacement error. The Resnet+transformer model is currently leading in this metric. The [Bench2Drive]([url](https://github.com/Thinklab-SJTU/Bench2Drive)) authors warn against evaluating models in these open-loop metrics as they may not correlate to real-world driving performance.</figcaption>
-</figure>
 
 ---
 
