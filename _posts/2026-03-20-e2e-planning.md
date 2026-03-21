@@ -273,6 +273,8 @@ The ResNet-18 planner (trainable backbone, 20.1M params) is the first architectu
 | VehicleTurningRoutePedestrian | ❌ Timeout | 5.3 | 43% | 0.12 | 2 | 0 | 8 |
 | **MEAN** | 2/10 completed | **27.6** | **52%** | **0.53** | **1.1** | **0.2** | **9.4** |
 
+*DS = Route% × Penalty, where Penalty starts at 1.0 and is multiplied down by each infraction (vehicle collision ×0.60, static collision ×0.65, red light ×0.70, etc.). MinSpd is logged but currently not penalising the score. See [Blog 5 — Benchmark Metrics Explained](/2026/03/21/bench2drive-benchmarking.html#chapter-6-benchmark-metrics-explained) for the full breakdown.*
+
 **Observations at epoch 17:**
 - No pedestrian or red light violations across all 10 routes — the model is cautious
 - The two completions (HazardAtSideLane, EnterActorFlow) suggest the model handles flow-following scenarios well
