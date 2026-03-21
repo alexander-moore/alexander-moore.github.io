@@ -192,17 +192,18 @@ The six architectures are not arbitrary — they form a controlled ablation ladd
 
 ### Axis 1: Visual Input
 
-| Model | Vision | Cameras | Parameters | Latency (ms) | FPS | Avg L2 (↓) |
-|---|---|---|---|---|---|---|
-| MLP Planner | None | — | 289K | 0.4 | 2550 | — |
-| Transformer Planner | None | — | 1.4M | 2.3 | 440 | — |
-| ResNet Planner | ResNet50 (frozen) | 1 (front) | 33.2M | 7.7 | 130 | — |
-| Front Cam Planner | TinyViT (frozen) | 1 (front) | 29.6M | 8.8 | 113 | — |
-| FrontCam+Depth Planner | TinyViT (frozen) | 1 (front) | 35.7M | 11.9 | 84 | — |
-| ViT Planner (full) | TinyViT (frozen) | 6 (surround) | 41.8M | 66.3 | 15 | — |
-| *ThinkTwice (SOTA)* | — | — | — | — | — | *0.95* |
+| Model | Vision | Cameras | Parameters | Latency (ms) | FPS | Avg L2 (↓) | DS (↑) |
+|---|---|---|---|---|---|---|---|
+| MLP Planner | None | — | 289K | 0.4 | 2550 | — | — |
+| Transformer Planner | None | — | 1.4M | 2.3 | 440 | — | — |
+| ResNet-18 Planner (trainable) | ResNet18 | 1 (front) | 20.1M | — | — | **1.800** | **27.6** |
+| ResNet Planner | ResNet50 (frozen) | 1 (front) | 33.2M | 7.7 | 130 | — | — |
+| Front Cam Planner | TinyViT (frozen) | 1 (front) | 29.6M | 8.8 | 113 | — | — |
+| FrontCam+Depth Planner | TinyViT (frozen) | 1 (front) | 35.7M | 11.9 | 84 | — | — |
+| ViT Planner (full) | TinyViT (frozen) | 6 (surround) | 41.8M | 66.3 | 15 | — | — |
+| *ThinkTwice (SOTA)* | — | — | — | — | — | *0.95* | *~75* |
 
-*Avg L2: mean L2 distance (meters) between predicted and ground-truth waypoints on the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) validation split. Lower is better. SOTA is 0.95m from ThinkTwice. Results populated as training completes. Latency measured at batch size 1 on an RTX 3090 (fp32); Bench2Drive runs at 10 Hz so ≥10 FPS is required for real-time inference.*
+*Avg L2: mean L2 distance (meters) between predicted and ground-truth waypoints on the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) validation split. Lower is better. SOTA is 0.95m from ThinkTwice. DS: mean Driving Score on 10-route closed-loop benchmark (see [Blog 5](/2026/03/21/bench2drive-benchmarking.html)). Results populated as training completes. Latency measured at batch size 1 on an RTX 3090 (fp32); Bench2Drive runs at 10 Hz so ≥10 FPS is required for real-time inference.*
 
 **Controls:** does vision help planning? Does more coverage (surround vs front only) help?
 
@@ -254,7 +255,34 @@ Auxiliary task metrics (depth AbsRel, segmentation weighted IoU) are tracked sep
 
 ---
 
-## Chapter 4: What's Next
+## Chapter 4: Early Closed-Loop Benchmark Results
+
+The ResNet-18 planner (trainable backbone, 20.1M params) is the first architecture to reach a deployable checkpoint. It was benchmarked on 10 routes in CARLA via the Bench2Drive leaderboard evaluator at epoch 17 (val avg L2 = 1.800 m). Full methodology in [Blog 5](/2026/03/21/bench2drive-benchmarking.html).
+
+| Scene | Status | DS | Route% | Penalty | ColVeh | Blocked | MinSpd |
+|---|---|---|---|---|---|---|---|
+| HazardAtSideLane | ✅ Completed | 60.0 | 100% | 0.60 | 1 | 0 | 21 |
+| EnterActorFlow | ✅ Completed | 36.0 | 100% | 0.36 | 2 | 0 | 17 |
+| VehicleTurningRoute | ❌ Deviated | 56.2 | 56% | 1.00 | 0 | 0 | 10 |
+| NonSignalizedJunctionLeftTurn | ❌ Deviated | 50.8 | 52% | 0.97 | 0 | 0 | 9 |
+| SignalizedJunctionRightTurn | ❌ Timeout | 19.1 | 49% | 0.39 | 1 | 0 | 9 |
+| OppositeVehicleTakingPriority | ❌ Timeout | 18.4 | 18% | 1.00 | 0 | 0 | 3 |
+| HardBreakRoute | ❌ Blocked | 18.8 | 41% | 0.46 | 1 | 1 | 6 |
+| ParkingCutIn | ❌ Blocked | 6.9 | 27% | 0.25 | 1 | 1 | 5 |
+| AccidentTwoWays | ❌ Timeout | 4.5 | 32% | 0.14 | 3 | 0 | 6 |
+| VehicleTurningRoutePedestrian | ❌ Timeout | 5.3 | 43% | 0.12 | 2 | 0 | 8 |
+| **MEAN** | 2/10 completed | **27.6** | **52%** | **0.53** | **1.1** | **0.2** | **9.4** |
+
+**Observations at epoch 17:**
+- No pedestrian or red light violations across all 10 routes — the model is cautious
+- The two completions (HazardAtSideLane, EnterActorFlow) suggest the model handles flow-following scenarios well
+- TickRuntime failures indicate the agent is too slow per step on compute-heavy scenarios — an infrastructure issue, not a driving quality issue
+- Min speed infractions are universal (avg 9.4/route) and confirm the model drives at ~3 m/s vs traffic at 6–8 m/s; currently not penalising score
+- Remaining architectures will be benchmarked as training completes
+
+---
+
+## Chapter 5: What's Next
 
 With the architectures designed and the ablation storyboarded, the next steps are:
 
