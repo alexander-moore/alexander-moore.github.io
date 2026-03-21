@@ -158,7 +158,61 @@ Now here is our ResNet-18 planner at epoch 12, deployed in a `HazardAtSideLane` 
 
 ---
 
-## Chapter 6: Benchmark Results
+## Chapter 6: Benchmark Metrics Explained
+
+Before looking at our results, it's worth understanding exactly what the Bench2Drive evaluator measures and how the scores are computed.
+
+### The Three Core Scores
+
+Every route produces three numbers:
+
+**`score_route`** — percentage of the route completed before failure or timeout. 100 = reached the destination. This is the raw "how far did the car get" number.
+
+**`score_penalty`** — a multiplier in (0, 1] that starts at 1.0 and is reduced by each infraction. Multiple infractions compound multiplicatively. A penalty of 0.65 means the car lost 35% of its score to infractions.
+
+**`score_composed`** — the final driving score:
+```
+score_composed = score_route × score_penalty
+```
+A perfect drive = 100. A car that completes the route but runs a red light scores less than 100. A car that completes 50% with no infractions scores 50.
+
+---
+
+### Infractions and Their Penalties
+
+Each infraction type applies a fixed multiplier to `score_penalty`:
+
+| Infraction | Penalty Multiplier | Notes |
+|---|---|---|
+| Collision with pedestrian | ×0.50 | Harshest penalty |
+| Collision with vehicle | ×0.60 | |
+| Collision with static layout | ×0.65 | Curbs, walls, vegetation |
+| Red light violation | ×0.70 | |
+| Scenario timeout | ×0.70 | Agent too slow to complete a scenario |
+| Yield to emergency vehicle | ×0.70 | |
+| Stop sign violation | ×0.80 | Least severe fixed penalty |
+| Off-road driving | proportional | Currently weighted 0 in Bench2Drive |
+| Min speed infraction | logged only | Currently **not penalising score** (set to `unused`) |
+
+Note: **min speed infractions are tracked but do not currently reduce the score** — they appear in the logs as an indication that the agent is driving too slowly relative to surrounding traffic, but the penalty weight is set to `unused` in the Bench2Drive leaderboard. This is relevant for our model, which consistently drives at ~3 m/s.
+
+### Terminal Failure Modes
+
+A route ends early (before reaching the destination) for one of:
+
+| Status | Meaning |
+|---|---|
+| `Completed` | Destination reached — score_route = 100 |
+| `Failed - Agent got blocked` | Agent stopped moving for too long |
+| `Failed - Agent deviated from the route` | Agent left the designated route path |
+| `Failed - TickRuntime` | Agent exceeded the per-tick time budget |
+| `Failed - Route timeout` | Total route time limit exceeded |
+
+A terminal failure freezes `score_route` at whatever percentage was completed at that point.
+
+---
+
+## Chapter 7: Benchmark Results
 
 We run the agent on the [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive) leaderboard evaluator, single-route mode, on a `HardBreakRoute` in Town01 — a simple straight road, chosen specifically to isolate basic driving behavior from complex scenario logic.
 
@@ -184,7 +238,7 @@ This is a **12-epoch checkpoint** — the model is early in training. For contex
 
 ---
 
-## Chapter 7: Video Recording Pipeline
+## Chapter 8: Video Recording Pipeline
 
 One unexpected addition to this work: an agent-side video recording system. Since CARLA runs offscreen (`-RenderOffScreen`), there's no window to capture. Instead, we save annotated frames directly from the agent's `run_step` callback.
 
@@ -210,7 +264,7 @@ This makes it easy to directly compare model behavior across scenes, and across 
 
 ---
 
-## Chapter 8: What's Next
+## Chapter 9: What's Next
 
 The model is running and the infrastructure is solid. The immediate next step is simply **more training** — the model is mid-convergence and the slow, conservative driving behavior should improve naturally as it sees more gradient steps.
 
