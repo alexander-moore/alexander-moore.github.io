@@ -12,7 +12,28 @@ image:
 
 [GitHub](https://github.com/facebookresearch/eupe) | [Project Page](https://github.com/facebookresearch/eupe) | [ArXiv](https://arxiv.org/pdf/2603.22387)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. In the context of autonomous driving, efficient perception encoders are a long-standing bottleneck — this paper proposes a unified architecture that addresses it directly.
+Foundation vision encoders can be convolutional neural networks or vision transformers trained by full  supervision (like SAM), weak supervision on image-text pairs (like CLIP), or self-supervision (like MAEs).
+
+A single visual foundation model usually excels in one or two task domains, like image-text alignment or dense prediction (like depth, semantic segmentation...). Downstream applications require careful selection of a specific encoder to avoid performance degredation. FAIR's Perception Encoder (PE, https://arxiv.org/abs/2504.13181) proposes to unify many downstream tasks at various depths in a single vision encoder.
+
+However, the authors wonder about _aggregating multiple domain experts into a single model_.q RADIO distills multiple teacher models, which works well for large students but fails for small efficient models. Efficient, fast models are vital for AI on the edge and real-time applications. Self-driving cars, perhaps!
+
+The research proposes a training recipe for efficient encoders, which is first scaling the models up then down. They first implement a proxy teacher which is a large model to distil multiple-expert information. Then train an efficient student from this proxy teacher.
+
+**Research Proposal**: Maybe our RAP 3D image encoder could be another teacher in the recipe which we then distill?
+
+They demonstrate that this pipeline leads to efficient models which can **outperform domain experts** when transfering to downstream tasks - even outperforming DINOv3 on dense prediction downstreams!
+
+Contributions:
+
+1. Scale-up scale-down distillation recipe (new take on agglomerative methods like RADIO).
+
+2. A zoo of efficient models (I'm interested in exploring here, especially for video streaming).
+
+3. Study on distillation recipe for training stages, teachers, hyperparameter choices.
+
+
+
 
 <figure>
   <img src="/images/placeholder_architecture.png" alt="[Placeholder: Model architecture overview]">
