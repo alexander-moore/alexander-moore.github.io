@@ -2,15 +2,15 @@
 layout: article
 title: "AV Blog 8: Paper Review: Efficient Universal Perception Encoder"
 date: 2026-04-03
-description: "Reviewing [Paper Title] — a unified, lightweight perception encoder designed for multi-sensor autonomous driving pipelines."
+description: "Reviewing FAIR EURPE — Efficient Universal Perception Encoder."
 tags: [autonomous-vehicles, paper-review, computer-vision, transformers, efficiency]
 image:
   path: /images/placeholder_splash.png
 ---
 
-(Note: Sections of this post were produced with LLM assistance)
+(Note: This post was produced WITHOUT LLMs)
 
-[GitHub](#) | [Project Page](#) | [ArXiv](#)
+[GitHub](https://github.com/facebookresearch/eupe) | [Project Page](https://github.com/facebookresearch/eupe) | [ArXiv](https://arxiv.org/pdf/2603.22387)
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. In the context of autonomous driving, efficient perception encoders are a long-standing bottleneck — this paper proposes a unified architecture that addresses it directly.
 
