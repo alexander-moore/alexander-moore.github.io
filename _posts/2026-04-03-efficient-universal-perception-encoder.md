@@ -5,7 +5,7 @@ date: 2026-04-03
 description: "Reviewing FAIR EURPE — Efficient Universal Perception Encoder."
 tags: [autonomous-vehicles, paper-review, computer-vision, transformers, efficiency]
 image:
-  path: <img width="1055" height="619" alt="image" src="https://github.com/user-attachments/assets/61be798c-9888-469b-be24-1019378d8f4c" />
+  path: https://github.com/user-attachments/assets/61be798c-9888-469b-be24-1019378d8f4c
 
 ---
 
