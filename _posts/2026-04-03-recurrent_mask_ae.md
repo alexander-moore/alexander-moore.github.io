@@ -1,8 +1,8 @@
 ---
 layout: article
-title: "AV Blog 8: Paper Review: Efficient Universal Perception Encoder"
-date: 2026-04-03
-description: "Reviewing FAIR EURPE — Efficient Universal Perception Encoder."
+title: "AV Blog 8: Paper Review: Recurrent Video Masked Autoencoders"
+date: 2026-04-09
+description: "Reviewing Recurrent Video Masked Autoencoders (and perception4d)."
 tags: [autonomous-vehicles, paper-review, computer-vision, transformers, efficiency]
 image:
   path: /images/RVMAE.png
@@ -13,60 +13,40 @@ image:
 [GitHub](https://rvm-paper.github.io/) | [ArXiv](https://arxiv.org/pdf/2512.13684)
 
 
-
-<figure>
-  <img src="/images/placeholder_architecture.png" alt="[Placeholder: Model architecture overview]">
-  <figcaption>[Placeholder caption]: Overview of the proposed universal perception encoder. Left: multi-sensor input (camera, LiDAR, radar). Center: shared encoder backbone with cross-modal attention. Right: downstream task heads for detection, segmentation, and planning.</figcaption>
-</figure>
+<img width="711" height="445" alt="image" src="https://github.com/user-attachments/assets/4cebb292-2043-49aa-b9df-95d204531a46" />
+Caption: Considering both dense spatial and captioning tasks, RVM outperforms general video encoders.
 
 ---
 
 ## Chapter 1: Background
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. The core challenge in building a universal perception encoder is handling the heterogeneity of sensor modalities — cameras produce dense RGB tensors, LiDAR produces sparse point clouds, and radar produces even sparser reflectance maps. Prior work has generally handled each modality with a dedicated backbone, which is expensive at inference time.
+Recurrent Video Masked Autoencoders (RVM) are a novel approach to video representation learning using recurrent transformers to aggregate dense features over time. RVM lears via asymmetric masked prediction using pixel reconstruction. RVM achieves generalist performance against state-of-the-art video encoders (VideoMAE, V-JEPA). Like the [EUPE](https://arxiv.org/pdf/2603.22387) paper, this holds against various downstream video-level tasks like point and object tracking, geomtric, and dense spatial understanding. Up to 30x greater parameter efficiency than competing video masked autoencoders. Features are stably propegated over long temporal horizons despite linear complexity cost, overcoming standard limitations of RNNs AND attention-based architectures. RVM learns rich representations in scene semantics, structure, and motion.
 
-**Key ideas from this paper:**
+This paper comes from a long line of video representation models which model the world by predicting the spatio-temporal evolution of the world as self-supervised learning.
 
-- **[Idea 1]**: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-- **[Idea 2]**: Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-- **[Idea 3]**: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
+JEPAs (Joint Embedding Predictive Architectures) predict future states in latent space. VideoMAE and V-JEPA rely on early-fusion spatio-temporal encoders (with spatiotemporal attention throughout the network) and random masking across entire clips. This treats time as uniform and symmetric, both in masking and in attention, neglecting the casual nature of temporal dynamics. This limits their application to streaming video such as robotics. Chunked offline representations also prevent consistent representations over long time horizons.
+
+DINO family are capable of learning stable semantic features unrolled over multiple frames, but fail to encode motion information in features.
+
+RVM addresses these shortcomings by explicitly modeling asymetry through timne in both maskiing adn architecture. Videos are processed sequentially by aggregating frame-level representations. These representations **genralize to spatial and video (spatio-temporal)** tasks. This recurrent design has **emergent** stability over long time horizons, and unrolls over sequences with _linear compute AND memory_!
 
 **Related Work**
+Self-supervised video. Learns from unlabeled mass video. Contrastive or reconstructive approaches.
 
-Universal perception backbones have gained traction recently. [Citation] introduced a joint camera-LiDAR tokenization scheme, while [Citation] demonstrated that a single ViT trunk could be fine-tuned across perception tasks with minimal task-specific overhead. The paper under review builds on this line of work but introduces [key differentiator — to be filled in].
+Mask Autoencoders. Lots of work in Siamese networks, masked reconstruction.
 
-**Research note**: It would be interesting to ablate the cross-modal attention module against a simple concatenation baseline — does the structured interaction actually help, or is it just more parameters?
+Recurrent Video models. (For me, the most interesting section). These approaches do NOT use windows of frames for offline inference and therfore can be applied in real-time to streaming video. RViT recurrent vision transformer [77] and RCNN recurrent convolutional networks learns spatio-temporal video in recurrent connections in its layers. State space models such as VideoMamba and VideoMambaPro also do linear video understanding. However these rely on non-causal, bi-directional learning! They also consider videos as flat token sequences - losing spatial info.
 
 ---
 
 ## Chapter 2: Method
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis molestie dictum semper, libero libero commodo lacus, id tincidunt eros neque eget nibh.
+<img width="1364" height="620" alt="image" src="https://github.com/user-attachments/assets/4fd9f9e0-10e2-45f7-9640-1010b15a8e2d" />
 
-The encoder processes all sensor inputs through a shared tokenizer, producing a unified token sequence that is fed into a standard transformer trunk. The key components are:
+Approach: 
 
-1. **[Module 1]**: Lorem ipsum dolor sit amet — produces per-sensor token embeddings at a fixed resolution.
-2. **[Module 2]**: Cross-modal attention — allows tokens from different modalities to attend to one another prior to the main trunk.
-3. **[Module 3]**: Task-agnostic trunk — a standard ViT-B/16 operating over the combined token sequence.
+Sequence of t frames is encoded under ViT with 2d position encoding. We iterate with an RNN, where k,v come from an initial state. The initial state and ViT output tokens are input to RNN, which returns state St. k,v are then propegated to next RNN input along with next frame tokens.
 
-```python
-# Placeholder: encoder forward pass
-encoder = UniversalPerceptionEncoder(
-    backbone="vit_b_16",
-    modalities=["camera", "lidar"],
-    cross_modal_layers=4,
-)
-
-tokens = encoder(camera=imgs, lidar=pts)
-# tokens: (B, N, D) — unified token sequence for downstream heads
-```
-
-<figure>
-  <img src="/images/placeholder_crossmodal.png" alt="[Placeholder: Cross-modal attention visualization]">
-  <figcaption>[Placeholder caption]: Cross-modal attention maps between camera tokens (rows) and LiDAR tokens (columns) on a sample driving scene. Brighter cells indicate higher attention weight. The encoder attends most strongly to LiDAR returns in the immediate foreground of the vehicle.</figcaption>
-</figure>
-
-**Research note**: The cross-modal attention mechanism here is similar to the raster-to-real alignment in RAP — both are trying to produce a shared latent between two views of the same scene. Worth comparing how the training objectives differ.
 
 ---
 
