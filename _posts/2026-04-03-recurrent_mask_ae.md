@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "AV Blog 8: Paper Review: Recurrent Video Masked Autoencoders"
+title: "AV Blog 9: Paper Review: Recurrent Video Masked Autoencoders"
 date: 2026-04-09
 description: "Reviewing Recurrent Video Masked Autoencoders (and perception4d)."
 tags: [autonomous-vehicles, paper-review, computer-vision, transformers, efficiency]
