@@ -113,3 +113,89 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, urna non t
 - **Cross-benchmark evaluation**: The paper focuses on [Benchmark A/B]. Worth checking how the encoder holds up on Bench2Drive's closed-loop eval, where sensor noise and distribution shift matter more.
 
 Don't take my word for it — [read their work](#).
+
+---
+
+## Feature Visualisations
+
+The frozen RVM-L16 encoder produces rich spatial-temporal representations without any task-specific training.
+Below we visualise the patch-level hidden state across three different video sources:
+**DAVIS** (natural scenes), **CARLA/Bench2Drive** (synthetic driving), and **Perception Test** (in-the-wild).
+
+Each strip shows: **original** · **PCA features** (first 3 principal components as RGB) ·
+**K-means (k=8)** unsupervised clusters · **state change** (cosine distance from frame 0, Turbo colourmap).
+
+### DAVIS — Natural Scenes
+
+<figure>
+  <img src="/images/rvm/davis_motocross-jump_composite.gif" alt="Davis Motocross Jump">
+  <figcaption>Davis Motocross Jump — the encoder cleanly separates rider, bike, and sky even mid-air. (<a href="/images/rvm/davis_motocross-jump_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/davis_blackswan_composite.gif" alt="Davis Blackswan">
+  <figcaption>Davis Blackswan (<a href="/images/rvm/davis_blackswan_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/davis_car-race_composite.gif" alt="Davis Car Race">
+  <figcaption>Davis Car Race (<a href="/images/rvm/davis_car-race_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/davis_breakdance_composite.gif" alt="Davis Breakdance">
+  <figcaption>Davis Breakdance (<a href="/images/rvm/davis_breakdance_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/davis_dog_composite.gif" alt="Davis Dog">
+  <figcaption>Davis Dog (<a href="/images/rvm/davis_dog_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/davis_camel_composite.gif" alt="Davis Camel">
+  <figcaption>Davis Camel (<a href="/images/rvm/davis_camel_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/davis_horsejump-high_composite.gif" alt="Davis Horsejump High">
+  <figcaption>Davis Horsejump High (<a href="/images/rvm/davis_horsejump-high_composite.png">still</a>)</figcaption>
+</figure>
+
+
+### CARLA / Bench2Drive — Synthetic Driving
+
+The encoder generalises to synthetic driving footage with no fine-tuning, cleanly segmenting road surface, vehicles, sky, and vegetation.
+
+<figure>
+  <img src="/images/rvm/carla_accident-town03-route101-weather23_composite.gif" alt="CARLA Town03 accident scenario">
+  <figcaption>CARLA Town03 — accident scenario, front camera. (<a href="/images/rvm/carla_accident-town03-route101-weather23_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/carla_accident-town05-route218-weather10_composite.gif" alt="CARLA Town05 accident scenario">
+  <figcaption>CARLA Town05 — accident scenario. (<a href="/images/rvm/carla_accident-town05-route218-weather10_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/carla_accident-town04-route159-weather3_composite.gif" alt="CARLA Town04 accident scenario">
+  <figcaption>CARLA Town04 — accident scenario. (<a href="/images/rvm/carla_accident-town04-route159-weather3_composite.png">still</a>)</figcaption>
+</figure>
+
+### Perception Test — In-the-Wild Video
+
+<figure>
+  <img src="/images/rvm/pt_video_1_composite.gif" alt="Perception Test video 1">
+  <figcaption>Perception Test video 1. (<a href="/images/rvm/pt_video_1_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/pt_video_2265_composite.gif" alt="Perception Test video 2265">
+  <figcaption>Perception Test video 2265. (<a href="/images/rvm/pt_video_2265_composite.png">still</a>)</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/rvm/pt_video_48_composite.gif" alt="Perception Test video 48">
+  <figcaption>Perception Test video 48. (<a href="/images/rvm/pt_video_48_composite.png">still</a>)</figcaption>
+</figure>
+
